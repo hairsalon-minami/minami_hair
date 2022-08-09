@@ -1,0 +1,24 @@
+{{ define "title" }}{{ .Title }}{{ end }}
+
+{{ define "meta" }}
+<meta name="robots" content="noindex">
+{{ end }}
+
+{{ define "main" }}
+<div id="page404">
+<h1 class=" text-xl text-red-500 bg-blue-500 ">お探しのページが見つかりません。</h1>
+<p>誠に申し訳ございませんが、<br>
+アクセスしようとしたページが見つかりませんでした。<br>
+お客様のご覧になっていたページからのリンクが<br>
+無効になっている可能性があります。</p>
+<p>大変お手数ですが<a href="">こちらの問い合わせフォーム</a>にてリンクが無効になっていたページのURL等などをお知らせ下さい。
+いただきました情報を参考に対応させて頂きます。</p>
+<p>また、お探しのページがブログ記事でしたら、<br>
+下記のツールがお役に立つかもしれません。<br>
+ぜひともご活用ください。</p>
+
+{{ partial "taxonomy.html" . }} 
+
+<a href="{{ .Site.BaseURL }}">HOMEへ</a>
+</div>
+{{ end }}

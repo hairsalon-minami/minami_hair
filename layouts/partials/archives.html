@@ -1,0 +1,8 @@
+<div class="archives">
+  <select name="select" onChange="location.href=value;" class="content">
+    <option value="" hidden>月別アーカイブ</option>
+    {{- range .Site.Taxonomies.archives.Alphabetical }}
+    <option value="{{ "/archives/" | absLangURL }}{{ .Name | urlize }}">{{ .Name }}（{{ .Count }}）</option>
+    {{- end -}}
+  </select>
+</div>

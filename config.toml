@@ -1,0 +1,102 @@
+baseURL = "https://minami-hair.com/"
+languageCode = "ja-jp"
+title = "ヘアーサロンみなみ"
+[build]
+writeStats = true
+
+hasCJKLanguage = true
+pluralizeListTitles = false
+enableGitInfo = true
+copyright = "© 2022 ヘアーサロンみなみ"
+googleAnalytics = ""
+
+[markup.goldmark.renderer]
+unsafe= true
+
+[frontmatter]
+date= ["publishDate", ":filename", "date", ":fileModTime"]
+publishDate= ["publishDate", ":filename", "date", ":fileModTime"]
+lastmod = [":git", "lastmod", "date", "publishDate"]
+expiryDate = ["expiryDate"]
+
+[params]
+secondTitle = " - 大阪鶴見の理容店"
+blogTitle = "みなみ理容研究室"
+contact = "minami.hairsalon@gmail.com"
+description ='<address>大阪市鶴見区諸口1-10-45<br>Tel:06-6911-0635</address>'
+blogDescription ='<a href="https://minami-hair.com/">ヘアーサロンみなみ</a>のブログ'
+dateFormat = "2006年1月2日"
+googleAdsense = ""
+
+[params.author]
+thumbnail = "images/author.png"
+name = "スタッフ"
+description = "<h3>店長</h3><p>高校卒業後よりこの世界に携わり、童顔だが30年以上のキャリアがあるヘアーサロンみなみ三代目店長。理容師免許・美容師免許のダブルライセンスの持ち。</p><h3>スタイリスト</h3></p>店長の母。理容師免許・美容師免許のダブルライセンスの持ち主。主に女性のカット、顔そり（シェービング）パーマ巻き（ロッド巻き）担当。キャリア50年以上のベテラン。</p>"
+
+[taxonomies]
+category = "categories"
+tag = "tags"
+archive = "archives"
+
+[related]
+  includeNewer = true
+  threshold = 80
+  toLower = true
+
+[[related.indices]]
+  name = "categories"
+  weight = 80
+
+[[related.indices]]
+  name = "tags"
+  weight = 60
+
+[[related.indices]]
+  name = "date"
+  weight = 10
+
+[menu]
+[[menu.main]]
+    name = "SHOP HOME"
+    pre = ""
+    weight = -150
+    url = "/"
+[[menu.main]]
+    name = "BLOG TOP"
+    pre = ""
+    weight = -140
+    url = "/blog/"
+[[menu.main]]
+    name = "メニュー・料金"
+    pre = ""
+    weight = -130
+    url = "/menu/"
+[[menu.main]]
+    name = "ご予約・お問い合わせ"
+    pre = ""
+    weight = -120
+    url = "/contact/"
+
+[[menu.footer]]
+    name = "HOME"
+    pre = ""
+    weight = -50
+    url = "/"
+[[menu.footer]]
+    name = "SITE POLICY"
+    pre = ""
+    weight = -40
+    url = "/policy/"
+[[menu.footer]]
+    name = "PRIVACY POLICY"
+    pre = ""
+    weight = -30
+    url = "/privacy/"
+[[menu.footer]]
+    name = "CONTACT"
+    pre = ""
+    weight = -20
+    url = "/contact/"
+ 
+[outputs]
+home = [ "HTML" ,"RSS" ]

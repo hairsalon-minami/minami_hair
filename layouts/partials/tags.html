@@ -1,0 +1,10 @@
+<div class="tags">
+  <p class="title">
+    <svg class="icon" aria-hidden="true"><use xlink:href="#tag" /></svg><a href="/tags/">タグ</a>
+  </p>
+  <ul class="content">
+    {{- range .Site.Taxonomies.tags.ByCount }}
+    <li><a href="{{ "/tags/" | absLangURL }}{{ .Name  | urlize }}">{{ .Name }}（{{ .Count }}）</a></li>
+    {{- end -}}
+  </ul>
+</div>

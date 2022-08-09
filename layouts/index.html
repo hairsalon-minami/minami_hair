@@ -1,0 +1,14 @@
+{{- define "title" }}{{ .Site.Title }}{{ with .Site.Params.secondTitle }}{{ . }}{{ end }}{{ end -}}
+
+{{- define "main" }}
+
+  {{ .Content }}
+
+
+  <div class="text-xl">ブログ</div>
+  <ul>
+    {{ range first 4 ( where site.RegularPages "Section" "blog" ) }}
+      {{- .Render "li" -}}
+    {{ end }}
+  </ul>
+{{ end -}}

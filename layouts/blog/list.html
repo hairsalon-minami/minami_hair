@@ -1,0 +1,12 @@
+{{- define "title" }}{{ with .Site.Params.blogTitle }}{{ . }} |{{ end }}ヘアーサロンみなみのブログ{{ end -}}
+
+{{- define "main" -}}
+  <div class="articles">
+    {{- $articles := .Paginate .RegularPages -}}
+    {{- range $articles.Pages -}}
+      {{- .Render "li" -}}
+    {{- end -}}
+  </div>
+  <!-- ページネーション -->
+  {{ partial "paginator.html" . }}
+{{- end -}}

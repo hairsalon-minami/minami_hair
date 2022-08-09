@@ -1,0 +1,18 @@
+{{- $paginator := .Paginate .RegularPages -}}
+{{- if gt $paginator.TotalPages 1 -}}
+<ul class="blog-pagination">
+  {{- with $paginator.HasPrev -}}
+  <li>
+    <a href="{{ $paginator.Prev.URL }}" aria-label="Previous"><span aria-hidden="true">前へ</span></a>
+  </li>
+  {{- end -}}
+  <li>
+    <span>{{ $paginator.PageNumber }}</span>
+  </li>
+  {{- with $paginator.HasNext -}}
+  <li>
+    <a href="{{ $paginator.Next.URL }}" aria-label="Next"><span aria-hidden="true">次へ</span></a>
+  </li>
+  {{- end -}}
+</ul>
+{{- end -}}

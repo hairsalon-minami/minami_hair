@@ -1,0 +1,25 @@
+{{ $currentNode := . }} {{ if .Site.Menus.main }}
+<nav id="navigation" aria-label="メインナビゲーション">
+  <input type="checkbox" id="checkbox" aria-hidden="true" />
+  <label class="burger" for="checkbox" aria-hidden="true">
+    <button>
+      <div class="container top">
+        <div class="line top"></div>
+      </div>
+      <div class="container bottom">
+        <div class="line bottom"></div>
+      </div>
+    </button>
+  </label>
+  <ul class="global-navigation">
+    {{ range .Site.Menus.main }}
+    <li>
+      <a class="" href="{{ .URL }}">
+        {{ .Pre }}
+        <span>{{ .Name }}</span>
+      </a>
+    </li>
+    {{ end }}
+  </ul>
+</nav>
+{{ end }}

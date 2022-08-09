@@ -1,0 +1,31 @@
+{{- define "title" }}{{ .Title }}{{ with .Site.Params.blogTitle }}- {{ . }}{{ end }}{{ end -}}
+
+{{ define "meta" }}
+  <meta name="robots" content="noindex" />
+{{ end }}
+
+{{- define "main" -}}
+  <header class="page-title">
+    <h1 class="title">
+      {{- if ( eq .Section "categories" ) -}}
+        カテゴリー：{{ .Title }} 一覧
+      {{- else if ( eq .Section "tags" ) -}}
+        「 {{ .Title }}」タグ一覧
+      {{- else if ( eq .Section "archives" ) -}}
+        {{ .Title }}のアーカイブ
+      {{- end -}}
+    </h1>
+  </header>
+
+  <div class="articles">
+    {{- $plural := .Data.Plural }}
+    {{- range $index, $term := .Data.Terms.Alphabetical }}
+      <li>
+        <a href="{{ $.Site.LanguagePrefix }}/{{ $plural }}/{{ $term.Name | urlize }}">{{ $term.Name }}</a>
+        ({{ $term.Count }})
+      </li>
+    {{- end }}
+  </div>
+  <!-- ページネーション -->
+  {{ partial "paginator.html" . }}
+{{- end -}}

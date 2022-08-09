@@ -1,0 +1,23 @@
+<div class="prev-next">
+  {{ with .Next }}
+  <p id="next-article">
+    <a href="{{ .RelPermalink }}"
+      ><span
+        ><svg class="icon" aria-hidden="true">
+          <use xlink:href="#leftArrow" /></svg
+        >新しい記事</span
+      >サンプルタイトル</a
+    >
+  </p>
+  {{ end }} {{ with .Prev }}
+  <p id="prev-article">
+    <a href="{{ .RelPermalink }}">
+      <span
+        >過去の記事<svg class="icon" aria-hidden="true">
+          <use xlink:href="#rightArrow" />
+        </svg> </span
+      >サンプルタイトル</a
+    >
+  </p>
+  {{ end }}
+</div>

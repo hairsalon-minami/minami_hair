@@ -1,0 +1,73 @@
+/****** Reset CSS *******/
+
+/*** box sizing border-box ***/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*** link ***/
+a,
+a:visited {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+/*** button ***/
+button {
+  background-color: transparent;
+  color: inherit;
+  border-width: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+/*** margin 0 ***/
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+figure,
+ul,
+p,
+table,
+fieldset {
+  margin: 0;
+}
+
+/*** list ***/
+ul,
+ol,
+dd {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/*** h(n) ***/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 700;
+}
+
+/*** cite ***/
+cite {
+  font-style: normal;
+}
+
+/*** fieldset ***/
+fieldset {
+  border-width: 0;
+  padding: 0;
+}

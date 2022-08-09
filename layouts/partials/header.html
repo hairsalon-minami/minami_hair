@@ -1,0 +1,13 @@
+<div>
+  {{- if .IsHome -}}
+  <h1><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></h1>
+  {{- else -}}
+  <p><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></p>
+  {{- end -}} class=""><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></{{- if .IsHome -}}h1{{- else -}}p{{- end -}}>
+  {{- with .Site.Params.Description }}
+    <div>{{ . | markdownify }}</div>
+  {{ end -}}
+  {{- if .IsHome }}
+    <div>---img---</div>
+  {{ end -}}
+</div>

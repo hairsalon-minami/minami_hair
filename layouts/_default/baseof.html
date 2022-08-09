@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html{{ with .Site.LanguageCode }} lang="{{ . }}"{{ end }} dir="ltr">
+
+<head>
+
+  <meta charset="utf-8">
+  <title>{{ block "title" . }}{{ end }}{{ if not ( or ( eq .Section "blog" ) ( eq .Section "categories" ) ( eq .Section "tags" ) ( eq .Section "archives" )) }} - {{ .Site.Title }}{{ end }}</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  {{ with .Site.Params.contact }}<meta name="contact" content="{{ . }}">{{ end }}
+  {{ hugo.Generator }}
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  
+  {{- block "meta" . }}{{ end -}}
+  
+  <link rel="canonical" href="{{ .Permalink }}">
+  
+  {{- range .AlternativeOutputFormats }}
+  <link rel="{{ .Rel }}" type="{{ .MediaType.Type | html }}" href="{{ .Permalink | safeURL }}" title="{{ $.Site.Title | safeHTML }}">
+  {{- end }}
+  {{- range .AlternativeOutputFormats }}
+    {{- printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML -}}
+  {{ end -}}
+  
+  {{ $style := resources.Get "css/style.scss" | toCSS | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $style.Permalink }}">
+  <style>
+    #symbol-defs{ display: none }
+  </style>
+
+  {{ if not .Site.IsServer }}
+  
+    {{ with .Site.GoogleAnalytics }}
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{ . }}"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', '{{ . }}');
+    </script>
+    {{ end }}
+    
+    {{- with .Site.Params.GoogleAdsense }}
+    {{ end -}}
+    
+  {{ end }}
+</head>
+
+{{ if or ( eq .Section "blog" ) ( eq .Section "categories" ) ( eq .Section "tags" ) ( eq .Section "archives" ) }}
+
+<body ontouchstart="" class="blog">
+<!-- SVGアイコンスプライト -->
+{{ partial "symbol-def.svg" }}
+<header id="header">
+{{ if or ( eq .Section "blog" ) ( eq .Section "categories" ) ( eq .Section "tags" ) ( eq .Section "archives" ) }}
+{{ partial "header-blog.html" . }} 
+</header>
+{{ partial "navigation.html" . }}
+<main id="main">
+{{ block "main" . }}{{ end }}
+</main>
+<aside id="sidebar">
+{{ partial "taxonomy.html" . }} 
+{{ partial "latests.html" . }} 
+</aside>
+
+{{ else }}
+
+<body ontouchstart="">
+{{ partial "symbol-def.svg" }}
+<header id="header">
+{{ partial "header.html" . }} 
+</header>
+{{ partial "navigation.html" . }}
+<main id="main">
+{{ block "main" . }}{{ end }}
+</main>
+
+{{ end }}
+
+<footer id="footer">
+{{ partial "footer.html" . }} 
+</footer>
+
+</body>
+</html>
+

@@ -1,0 +1,67 @@
+// Variables
+
+// Media Queries
+// 基本、Bootstrapに依存
+
+// $mq-xsm: "(max-width: 575px)";
+// $mq-sm: "(min-width: 576px)";
+$xsm: 359px;
+$sm: 360px;
+$md: 768px;
+$lg: 992px; //640:320 余白32
+$xl: 1200px; //800:400
+$xxl: 1400px;
+
+$mq-xsm: "(max-width: #{$xsm})";
+$mq-sm: "(min-width: #{$sm})";
+$mq-md: "(min-width: #{$md})";
+$mq-lg: "(min-width: #{$lg})"; //640:320 余白32
+$mq-xl: "(min-width: #{$xl})"; //800:400
+$mq-xxl: "(min-width: #{$xxl})"; //912:456 余白32
+
+// font size
+$fs-xsm: 16px; // 一行20以下
+$fs-sm: 17px; // 一行20~40文字(%)
+$fs-mdlg: 18px; // 一行32~40文字(em) 576~720
+$fs-xl: 19px; // 一行40文字(em)760
+$fs-xxl: 20px; // 一行40文字(em)800
+
+// line height
+// 行文字数が少なければ広く、多ければ狭く
+// つまりフォントサイズが変われど行間は変わらず
+$lh: 32px;
+
+// color
+// 基本となるカラー hslの色相（h）を指定
+$base: 47;
+$base-color: hsl(47, 56%, 94%);
+
+// text color
+$text: hsl(47, 6%, 24%);
+$text-g: hsl(47, 6%, 49%);
+$text-w: hsl(227, 6%, 94%);
+$text-r: hsl(227, 6%, 94%);
+$text-rg: hsl(227, 6%, 49%);
+$text-rd: hsl(227, 6%, 24%);
+
+// link
+$link: hsl($base, 0%, 65%);
+$hover: $text;
+$visited: complement($link);
+
+// Background color
+$bg: hsl(47, 56%, 94%);
+$bg-l: hsl(47, 56%, 98%);
+$bg-d: hsl(47, 56%, 50%);
+$bg-r: hsl(227, 56%, 94%);
+$bg-rl: hsl(227, 56%, 99%);
+$bg-rd: hsl(227, 56%, 14%);
+
+// Box Design Color (wrapper)
+$boxshadow-l: hsla(47, 0%, 99%, 0.8);
+$boxshadow-d: hsla(47, 0%, 1%, 0.2);
+$boxshadow-rl: hsla(227, 0%, 99%, 0.8);
+$boxshadow-rd: hsla(227, 0%, 1%, 0.2);
+
+$article-gra: linear-gradient(135deg, lighten($bg, 1%), darken($bg, 1%));
+$sidebar-gra: linear-gradient(135deg, lighten($bg-d, 1%), darken($bg-d, 1%));
