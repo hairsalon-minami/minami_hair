@@ -1,14 +1,15 @@
 baseURL = "https://minami-hair.com/"
 languageCode = "ja-jp"
 title = "ヘアーサロンみなみ"
-[build]
-writeStats = true
-
 hasCJKLanguage = true
 pluralizeListTitles = false
 enableGitInfo = true
 copyright = "© 2022 ヘアーサロンみなみ"
 googleAnalytics = ""
+paginate = 12
+
+[build]
+writeStats = true
 
 [markup.goldmark.renderer]
 unsafe= true
@@ -23,9 +24,9 @@ expiryDate = ["expiryDate"]
 secondTitle = " - 大阪鶴見の理容店"
 blogTitle = "みなみ理容研究室"
 contact = "minami.hairsalon@gmail.com"
-description ='<address>大阪市鶴見区諸口1-10-45<br>Tel:06-6911-0635</address>'
-blogDescription ='<a href="https://minami-hair.com/">ヘアーサロンみなみ</a>のブログ'
-dateFormat = "2006年1月2日"
+description = ""
+blogDescription = "ヘアーサロンみなみのブログ"
+dateFormat = "2006.01.02"
 googleAdsense = ""
 
 [params.author]

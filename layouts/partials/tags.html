@@ -4,7 +4,7 @@
   </p>
   <ul class="content">
     {{- range .Site.Taxonomies.tags.ByCount }}
-    <li><a href="{{ "/tags/" | absLangURL }}{{ .Name  | urlize }}">{{ .Name }}（{{ .Count }}）</a></li>
+    <li><a href="{{ "/tags/" | absLangURL }}{{ .Name  | urlize }}">{{ .Name }} ({{ .Count }})</a></li>
     {{- end -}}
   </ul>
 </div>

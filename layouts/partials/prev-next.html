@@ -6,7 +6,7 @@
         ><svg class="icon" aria-hidden="true">
           <use xlink:href="#leftArrow" /></svg
         >新しい記事</span
-      >サンプルタイトル</a
+      >{{ .Title }}</a
     >
   </p>
   {{ end }} {{ with .Prev }}
@@ -16,7 +16,7 @@
         >過去の記事<svg class="icon" aria-hidden="true">
           <use xlink:href="#rightArrow" />
         </svg> </span
-      >サンプルタイトル</a
+      >{{ .Title }}</a
     >
   </p>
   {{ end }}

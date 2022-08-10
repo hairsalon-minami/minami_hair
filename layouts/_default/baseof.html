@@ -29,8 +29,14 @@
     {{- printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML -}}
   {{ end -}}
   
-  {{ $style := resources.Get "css/style.scss" | toCSS | minify | fingerprint }}
-  <link rel="stylesheet" href="{{ $style.Permalink }}">
+  {{ $baseS := resources.Get "css/base.min.css" | resources.Fingerprint }}
+  <link rel="stylesheet" href="{{ $baseS.Permalink }}">
+  
+  {{ if or ( eq .Section "blog" ) ( eq .Section "categories" ) ( eq .Section "tags" ) ( eq .Section "archives" ) }}
+    {{ $blogS := resources.Get "css/blog.min.css" | resources.Fingerprint }}
+  <link rel="stylesheet" href="{{ $blogS.Permalink }}">
+  {{ end }}
+  
   <style>
     #symbol-defs{ display: none }
   </style>
@@ -58,33 +64,34 @@
 {{ if or ( eq .Section "blog" ) ( eq .Section "categories" ) ( eq .Section "tags" ) ( eq .Section "archives" ) }}
 
 <body ontouchstart="" class="blog">
-<!-- SVGアイコンスプライト -->
 {{ partial "symbol-def.svg" }}
+
 <header id="header">
-{{ if or ( eq .Section "blog" ) ( eq .Section "categories" ) ( eq .Section "tags" ) ( eq .Section "archives" ) }}
 {{ partial "header-blog.html" . }} 
 </header>
-{{ partial "navigation.html" . }}
-<main id="main">
-{{ block "main" . }}{{ end }}
-</main>
-<aside id="sidebar">
-{{ partial "taxonomy.html" . }} 
-{{ partial "latests.html" . }} 
-</aside>
 
 {{ else }}
 
 <body ontouchstart="">
 {{ partial "symbol-def.svg" }}
+
 <header id="header">
 {{ partial "header.html" . }} 
 </header>
+
+{{ end }}
+
 {{ partial "navigation.html" . }}
+
 <main id="main">
 {{ block "main" . }}{{ end }}
 </main>
 
+{{ if or ( eq .Section "blog" ) ( eq .Section "categories" ) ( eq .Section "tags" ) ( eq .Section "archives" ) }}
+<aside id="sidebar">
+{{ partial "sidebar.html" . }} 
+{{ partial "latest.html" . }} 
+</aside>
 {{ end }}
 
 <footer id="footer">
@@ -93,4 +100,3 @@
 
 </body>
 </html>
-

@@ -1,64 +1,14 @@
-// 変数
+@charset "UTF-8";
 
-:root {
-  --fontSize: #{$fs-xsm};
+//  blog.css
+//  blogのスタイル
+//
 
-  @media ($mq-sm) {
-    --fontSize: #{$fs-sm};
-  }
-  @media ($mq-md) {
-    --fontSize: #{$fs-mdlg};
-  }
-  @media ($mq-xl) {
-    --fontSize: #{$fs-xl};
-  }
-  @media ($mq-xxl) {
-    --fontSize: #{$fs-xxl};
-  }
+@use "lib/_var.scss" as *;
 
-  --lineHight: #{$lh};
-
-  --textColor: #{$text};
-  --textColor-g: #{$text-g};
-  --textColor-w: #{$text-w};
-  --textColor-r: #{$text-r};
-  --textColor-rg: #{$text-rg};
-  --textColor-rd: #{$text-rd};
-
-  --backGround: #{$bg};
-  --backGround-l: #{$bg-l};
-  --backGround-d: #{$bg-d};
-  --backGround-r: #{$bg-r};
-  --backGround-rl: #{$bg-rl};
-  --backGround-rd: #{$bg-rd};
-
-  --textLink: #{$link};
-  --textHover: #{$hover};
-  --textVisited: #{$visited};
-
-  --boxShadow-d: #{$boxshadow-d};
-  --boxShadow-l: #{$boxshadow-l};
-
-  --articleGradient: #{$article-gra};
-  --sidebarGradient: #{$sidebar-gra};
-}
-
-// font-family
-@import url("https://fonts.googleapis.com/css2?family=BIZ+UDPMincho&display=swap");
-
-body {
-  font-family: "BIZ UDPMincho", serif;
-  font-size: var(--fontSize);
-}
 .blog #main,
-#sidebar,
-.copyright {
+#sidebar {
   font-family: sans-serif;
-}
-
-// レイアウト
-body {
-  width: 100%;
 }
 .blog {
   background: var(--backGround);
@@ -144,14 +94,7 @@ body {
   grid-area: foot;
 }
 
-.icon {
-  width: 1em;
-  height: 1em;
-  fill: currentColor;
-  margin-right: 0.25em;
-}
-
-.blog-header {
+.blog #header {
   background: rgb(210, 60, 115);
   height: 3rem;
   display: flex;
@@ -182,130 +125,25 @@ body {
   font-size: 0.6em;
 }
 
-// /////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////
 //
 //  navigation
 //
-// ////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
 
-#navigation {
-  background: var(--backGround-l);
-
-  .container.top {
-    transform: translateY(-3px) scaleX(0.88235);
-  }
-
-  .container.bottom {
-    transform: translateY(3px) scaleX(0.88235);
-  }
-
-  input:checked + label .container .line.bottom {
-    transform: rotateZ(45deg);
-  }
-
-  input:checked + label .container .line.top {
-    transform: rotateZ(-45deg);
-  }
-
-  input:checked + label .container.bottom {
-    transform: none;
-  }
-
-  input:checked + label .container.top {
-    transform: none;
-  }
-
-  input:checked + label .line.bottom {
-    transform: none;
-    transition-delay: 0.1s;
-  }
-
-  input:checked + label .line.top {
-    transform: none;
-    transition-delay: 0.1s;
-  }
-
-  .container {
-    transition: transform 0.2s ease-in-out 0.1s;
-  }
-
-  input:checked + label .container {
-    transition-delay: 0s;
-  }
-
-  .line {
-    transition: transform 0.2s ease-in-out;
-  }
-
-  button {
-    all: unset;
-    cursor: pointer;
-    display: block;
-  }
-
-  button div {
-    pointer-events: none;
-  }
-
-  .burger {
-    height: 31px;
-    width: 31px;
-    display: block;
-    position: absolute;
-    top: calc((3rem - 31px) / 2);
-    right: calc((3rem - 31px) / 2);
-  }
-
-  .container {
-    position: absolute;
-    left: 7px;
-    top: 15px;
-  }
-
-  .line {
-    height: 1px;
-    border-radius: 3px;
-    background: #fff;
-    width: 17px;
-  }
-
-  input {
-    display: none;
-  }
-
+.blog #navigation {
   .global-navigation {
-    height: 0%;
-    overflow: hidden;
-    position: absolute;
-    top: 3rem;
-    left: 0;
-    right: 0;
     background: rgb(210, 60, 115);
-    transition: height 0.2s ease-in-out 0.1s;
-    text-align: center;
     color: #fff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  input:checked ~ .global-navigation {
-    height: 100%;
-  }
-  li {
-    padding: 5px 0;
-    width: 64%;
-    border-bottom: 1px solid #fff;
-    margin-top: 1rem;
-    font-size: 0.9em;
-  }
-  li:first-child {
-    margin-top: 2rem;
+    z-index: 100;
+    li {
+      border-bottom: 1px solid #fff;
+    }
+    a:hover {
+      opacity: 0.8;
+    }
   }
   @media ($mq-lg) {
-    input,
-    button {
-      display: none;
-    }
     .global-navigation,
     input:checked ~ .global-navigation {
       position: static;
@@ -427,11 +265,21 @@ body {
   justify-content: space-between;
 
   .category {
-    font-size: 0.9em;
+    font-size: 0.8em;
+    display: flex;
+    align-items: center;
+    .icon {
+      margin-top: -1px;
+    }
   }
-  .tag {
-    font-size: 0.9em;
-    color: var(--textColor-g);
+  .tags {
+    font-size: 0.8em;
+    display: flex;
+    align-items: center;
+    a {
+      color: var(--textColor-g);
+      padding-left: 0.5em;
+    }
   }
   a:hover {
     text-decoration: underline;
@@ -555,7 +403,13 @@ body {
   padding: $lh 0 1rem;
 
   a:hover {
-    text-decoration: underline;
+    .related-article {
+      background: var(--backGround-l);
+      opacity: 0.6;
+    }
+    .title {
+      text-decoration: underline;
+    }
   }
 }
 .related-title {
@@ -566,7 +420,7 @@ body {
 
 .related-article {
   display: grid;
-  grid-template-columns: min(30%, 128px) auto;
+  grid-template-columns: min(25%, 128px) auto;
   grid-template-rows: 8fr 2fr;
   gap: 0 5px;
   margin-top: 2rem;
@@ -648,11 +502,11 @@ body {
     }
   }
 }
-// /////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////
 //
 //   sidebar
 //
-// ////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
 
 #sidebar {
   .sidebar-title {
@@ -669,17 +523,25 @@ body {
 }
 
 // 新着記事
-#latest .content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-auto-rows: auto;
-
-  margin-top: 1rem;
-  @media ($mq-md) {
-    grid-template-columns: 1fr 1fr 1fr;
+#latest {
+  a:hover {
+    opacity: 0.8;
+    .title {
+      text-decoration: underline;
+    }
   }
-  @media ($mq-lg) {
+  .content {
+    display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-auto-rows: auto;
+
+    margin-top: 1rem;
+    @media ($mq-md) {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+    @media ($mq-lg) {
+      grid-template-columns: 1fr 1fr;
+    }
   }
 }
 .latest-article {
@@ -722,6 +584,9 @@ body {
   }
 }
 
+// カテゴリー
+// タグ
+// アーカイブ
 #findArticles {
   .categories,
   .tags {
@@ -802,82 +667,190 @@ body {
   }
 }
 
-// /////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////
 //
-//   footer
+//   list
 //
-// ////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
 
-#footer {
-  background: var(--backGround-rd);
-  color: var(--textColor-w);
-  margin-top: 8em;
-}
-
-.access {
+.articles {
+  margin-top: 1em;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: auto;
+  gap: 5px;
   @media ($mq-md) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 8px;
   }
-  figcaption {
-    padding-top: 30px;
-    text-align: center;
-    @media ($mq-md) {
-      padding: 0;
+  article {
+    overflow: hidden;
+    a {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+
+      &:hover {
+        opacity: 0.8;
+        .title {
+          text-decoration: underline;
+        }
+      }
     }
   }
-  address {
-    padding-top: 2em;
-    font-style: normal;
+
+  img {
+    max-width: 100%;
+  }
+  .wrapper {
+    background: var(--backGround-l);
+    padding: 5px;
     display: grid;
-    grid-template-columns: 5em auto;
-    font-size: 0.8em;
-    gap: 1em 0;
-    width: 23em;
-    margin: 0 auto;
-  }
-  span {
-    border-bottom: 0.5px solid currentColor;
-    padding-bottom: 2px;
-  }
-}
-.map {
-  margin-top: 50px;
-  aspect-ratio: 16/9;
-  width: 100%;
-  @media ($mq-md) {
-    grid-column-start: 1;
-    grid-row-start: 1;
-    aspect-ratio: 4/3;
-    margin: 0;
-  }
-}
-
-.footer-info {
-  padding-top: 30px;
-}
-footer .logo {
-  fill: currentColor;
-  width: 140px;
-  height: 38px;
-  margin-left: 10px;
-}
-
-footer .navigation {
-  padding-top: 20px;
-  > ul {
-    display: flex;
+    grid-template-columns: 1fr;
+    grid-template-rows: 80% 20%;
     font-size: 0.9em;
-    padding: 0 10px;
-    font-size: 0.6em;
   }
-  li:nth-child(n + 2)::before {
-    content: "|";
-    padding: 0 5px;
+  .post-meta {
+    font-size: 0.8em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--textColor-g);
   }
 }
-.copyright {
-  padding: 10px;
-  font-size: 0.8em;
+
+// pagination
+
+.pagination {
+  padding-top: 4rem;
+  display: flex;
+  justify-content: center;
+  gap: 0 2px;
+
+  .page-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2em;
+    background: var(--backGround-rd);
+    color: var(--textColor-w);
+    width: 2em;
+    overflow: hidden;
+  }
+  .page-item:first-child .page-link {
+    width: 2.5em;
+    border-radius: 1.25em 0 0 1.25em;
+    justify-content: end;
+    padding-right: 0.5em;
+  }
+  .page-item:last-child .page-link {
+    width: 2.5em;
+    border-radius: 0 1.25em 1.25em 0;
+    justify-content: start;
+    padding-left: 0.5em;
+  }
+  .page-link[href]:hover {
+    opacity: 0.8;
+  }
+  a:not([href]) {
+    cursor: default;
+  }
+}
+
+////////////////////////////////////////////////////////////////////
+//
+//  terms
+//
+///////////////////////////////////////////////////////////////////
+
+.page-title {
+  padding-top: 2em;
+
+  h1 {
+    font-size: 1.1em;
+  }
+}
+.terms-list {
+  padding-top: 1em;
+
+  ul {
+    padding-left: 1em;
+  }
+  li {
+    display: flex;
+    align-items: center;
+    padding: 2px 0;
+
+    &::before {
+      content: "";
+      background: var(--backGround-rd);
+      display: inline-block;
+      border-radius: 50%;
+      width: 0.3em;
+      height: 0.3em;
+      margin-right: 0.5em;
+      opacity: 0.8;
+    }
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+}
+
+////////////////////////////////////////////////////////////////////
+//
+//  Taxonomy ( default list )
+//
+///////////////////////////////////////////////////////////////////
+.article-list {
+  padding-top: 1em;
+
+  article {
+    @media ($mq-lg) {
+      padding: 0.5em;
+    }
+
+    a {
+      display: grid;
+      grid-template-columns: min(25%, 128px) auto;
+      grid-template-rows: auto;
+      margin-top: 1rem;
+      line-height: 1.5;
+      background: var(--backGround-l);
+      &:hover .title {
+        text-decoration: underline;
+      }
+    }
+    img {
+      aspect-ratio: 1/ 1;
+      width: 100%;
+      object-fit: cover;
+    }
+    .wrapper {
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows: 75% 25%;
+      padding: 5px;
+    }
+    .title {
+      font-weight: 700;
+      font-size: 0.9em;
+      overflow: hidden;
+      @media ($mq-md) {
+        font-size: 1em;
+      }
+    }
+    .post-meta {
+      font-size: 0.8em;
+      color: var(--textColor-g);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      @media ($mq-md) {
+        font-size: 0.9em;
+        justify-content: flex-start;
+        gap: 0 1em;
+      }
+    }
+  }
 }

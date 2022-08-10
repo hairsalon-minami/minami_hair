@@ -1,7 +1,7 @@
 <div id="latest">
   <p class="sidebar-title">新着記事</p>
-  <ul class="content"></ul>
-    {{- range $i, $p := (first 6 .Site.RegularPages) -}}
+  <ul class="content">
+    {{- range first 6 .Site.RegularPages.ByLastmod.Reverse -}}
     <li>
       <a href="{{ .RelPermalink }}">
         <article class="latest-article">    
@@ -20,7 +20,7 @@
           class="thumbnail"
           />
           <h2 class="title">{{ .Title }}</h2>
-          <time class="date" datetime="{{ .Date.Format "2007-01-02T15:04:05JST" }}">{{ .Date.Format ( .Site.Params.dateformat | default "Jan 2, 2006") }}</time>
+          <time class="date" datetime="{{ .Lastmod.Format "2007-01-02T15:04:05JST" }}">{{ .Lastmod.Format ( .Site.Params.dateformat | default "Jan 2, 2006") }}</time>
         </article>
       </a>
     </li>

@@ -1,0 +1,316 @@
+@charset "UTF-8";
+
+//  bass.css
+//  :root(var)
+//  全体共通のスタイル
+//     footer
+//     navの一部
+
+// normalize (local)
+@use "lib/_normalize.local.scss";
+
+// reset (local)
+@use "lib/_reset.local.scss";
+
+// variable
+@use "lib/_var.scss" as *;
+
+////////////////////////////////////////////////////////////////////
+//
+//   root (var)
+//
+///////////////////////////////////////////////////////////////////
+
+:root {
+  --fontSize: #{$fs-xsm};
+
+  @media ($mq-sm) {
+    --fontSize: #{$fs-sm};
+  }
+  @media ($mq-md) {
+    --fontSize: #{$fs-mdlg};
+  }
+  @media ($mq-xl) {
+    --fontSize: #{$fs-xl};
+  }
+  @media ($mq-xxl) {
+    --fontSize: #{$fs-xxl};
+  }
+
+  --lineHight: #{$lh};
+
+  --textColor: #{$text};
+  --textColor-g: #{$text-g};
+  --textColor-w: #{$text-w};
+  --textColor-r: #{$text-r};
+  --textColor-rg: #{$text-rg};
+  --textColor-rd: #{$text-rd};
+
+  --backGround: #{$bg};
+  --backGround-l: #{$bg-l};
+  --backGround-d: #{$bg-d};
+  --backGround-r: #{$bg-r};
+  --backGround-rl: #{$bg-rl};
+  --backGround-rd: #{$bg-rd};
+
+  --textLink: #{$link};
+  --textHover: #{$hover};
+  --textVisited: #{$visited};
+
+  --boxShadow-d: #{$boxshadow-d};
+  --boxShadow-l: #{$boxshadow-l};
+
+  --articleGradient: #{$article-gra};
+  --sidebarGradient: #{$sidebar-gra};
+}
+
+////////////////////////////////////////////////////////////////////
+//
+//   base
+//
+///////////////////////////////////////////////////////////////////
+
+@import url("https://fonts.googleapis.com/css2?family=BIZ+UDPMincho&display=swap");
+
+body {
+  font-family: "BIZ UDPMincho", serif;
+  font-size: var(--fontSize);
+  width: 100%;
+}
+
+.icon {
+  width: 1em;
+  height: 1em;
+  fill: currentColor;
+  margin-right: 0.25em;
+}
+
+////////////////////////////////////////////////////////////////////
+//
+//  navigation
+//
+//\////////////////////////////////////////////////////////////////
+
+#navigation {
+  background: var(--backGround-l);
+
+  .container.top {
+    transform: translateY(-3px) scaleX(0.88235);
+  }
+
+  .container.bottom {
+    transform: translateY(3px) scaleX(0.88235);
+  }
+
+  input:checked + label .container .line.bottom {
+    transform: rotateZ(45deg);
+  }
+
+  input:checked + label .container .line.top {
+    transform: rotateZ(-45deg);
+  }
+
+  input:checked + label .container.bottom {
+    transform: none;
+  }
+
+  input:checked + label .container.top {
+    transform: none;
+  }
+
+  input:checked + label .line.bottom {
+    transform: none;
+    transition-delay: 0.1s;
+  }
+
+  input:checked + label .line.top {
+    transform: none;
+    transition-delay: 0.1s;
+  }
+
+  .container {
+    transition: transform 0.2s ease-in-out 0.1s;
+  }
+
+  input:checked + label .container {
+    transition-delay: 0s;
+  }
+
+  .line {
+    transition: transform 0.2s ease-in-out;
+  }
+
+  button {
+    all: unset;
+    cursor: pointer;
+    display: block;
+  }
+
+  button div {
+    pointer-events: none;
+  }
+
+  .burger {
+    height: 31px;
+    width: 31px;
+    display: block;
+    position: absolute;
+    top: calc((3rem - 31px) / 2);
+    right: calc((3rem - 31px) / 2);
+  }
+
+  .container {
+    position: absolute;
+    left: 7px;
+    top: 15px;
+  }
+
+  .line {
+    height: 1px;
+    border-radius: 3px;
+    background: #fff;
+    width: 17px;
+  }
+
+  input {
+    display: none;
+  }
+
+  .global-navigation {
+    height: 0%;
+    overflow: hidden;
+    position: absolute;
+    top: 3rem;
+    left: 0;
+    right: 0;
+    // background: rgb(210, 60, 115);
+    transition: height 0.2s ease-in-out 0.1s;
+    text-align: center;
+    // color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  input:checked ~ .global-navigation {
+    height: 100%;
+  }
+  li {
+    padding: 5px 0;
+    width: 64%;
+    // border-bottom: 1px solid #fff;
+    margin-top: 1rem;
+    font-size: 0.9em;
+  }
+  li:first-child {
+    margin-top: 2rem;
+  }
+  @media ($mq-lg) {
+    input,
+    button {
+      display: none;
+    }
+    //   .global-navigation,
+    //   input:checked ~ .global-navigation {
+    //     position: static;
+    //     height: auto;
+    //     background: var(--backGround-l);
+    //     flex-direction: row;
+    //     color: var(--textColor-g);
+    //     transition: none;
+    //     justify-content: center;
+    //     padding-top: 16px;
+    //   }
+    //   li,
+    //   li:first-child {
+    //     margin: 0;
+    //     width: 10rem;
+    //     border: none;
+    //     font-size: 0.75em;
+    //     line-height: 1.5rem;
+    //   }
+    //   a:hover {
+    //     text-decoration: underline;
+    //   }
+  }
+}
+
+////////////////////////////////////////////////////////////////////
+//
+//   footer
+//
+//////////////////////////////////////////////////////////////////
+
+#footer {
+  background: var(--backGround-rd);
+  color: var(--textColor-w);
+  margin-top: 8em;
+}
+
+.access {
+  @media ($mq-md) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+  figcaption {
+    padding-top: 30px;
+    text-align: center;
+    @media ($mq-md) {
+      padding: 0;
+    }
+  }
+  address {
+    padding-top: 2em;
+    font-style: normal;
+    display: grid;
+    grid-template-columns: 5em auto;
+    font-size: 0.8em;
+    gap: 1em 0;
+    width: 23em;
+    margin: 0 auto;
+  }
+  span {
+    border-bottom: 0.5px solid currentColor;
+    padding-bottom: 2px;
+  }
+}
+.map {
+  margin-top: 50px;
+  aspect-ratio: 16/9;
+  width: 100%;
+  @media ($mq-md) {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    aspect-ratio: 4/3;
+    margin: 0;
+  }
+}
+
+.footer-info {
+  padding-top: 30px;
+}
+footer .logo {
+  fill: currentColor;
+  width: 140px;
+  height: 38px;
+  margin-left: 10px;
+}
+
+footer .navigation {
+  padding-top: 20px;
+  > ul {
+    display: flex;
+    font-size: 0.9em;
+    padding: 0 10px;
+    font-size: 0.6em;
+  }
+  li:nth-child(n + 2)::before {
+    content: "|";
+    padding: 0 5px;
+  }
+}
+.copyright {
+  font-family: sans-serif;
+  padding: 10px;
+  font-size: 0.8em;
+}

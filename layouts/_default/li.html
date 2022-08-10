@@ -1,25 +1,30 @@
 <article>
   <a href="{{ .RelPermalink }}">
-    <div class="imge">
     <img src="
-             {{- with .Resources.GetMatch "thumbnail.**" -}}
-               {{- $image := .Fit "600x300" -}}
-               {{- $image.RelPermalink -}}
-             {{- else }}/images/thumbnail-600x300.png{{ end -}}
-         " alt="" width="600" height="315" decoding="async" loading="lazy">
-    </div>
-    <div class="inner">
+      {{- with .Resources.GetMatch "thumbnail.**" -}}
+      {{- $image := .Fit "600x300" -}}
+      {{- $image.RelPermalink -}}
+      {{- else }}https://placehold.jp/600x300.png{{ end -}}
+      "
+       alt="" decoding="async" loading="lazy">
+       <div class="wrapper">
       <h2 class="title">{{ .Title }}</h2>
-      <ul class="">
-          <li><time datetime="{{ .Date.Format "2006-01-02T15:04:05JST" }}">
+      <div class="post-meta">
+          <time datetime="{{ .Date.Format "2006-01-02T15:04:05JST" }}">
             {{ .Date.Format ( .Site.Params.dateformat | default "Jan 2, 2006") }}
-          </time></li>
+          </time>
           {{- with .Params.categories -}}
-          {{- range . -}}
-          <li>{{ . }}</li>
+          <span><svg class="icon" aria-hidden="true">
+            <use xlink:href="#category" /></svg>
+            {{- range . -}}
+            <span href="{{ $.Site.BaseURL }}/categories/{{ . | urlize }}">{{ . }}</span>
+            {{- end -}}
+          </span>
           {{- end -}}
-          {{- end -}}
-      </ul>
+          {{ if .Draft }}
+              <span style="color: #2196f3;">DRAFT</span>
+          {{ end }}
+      </div>
     </div>
-  </a>
-</article>
+    </a>
+  </article>

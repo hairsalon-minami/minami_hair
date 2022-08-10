@@ -1,4 +1,4 @@
-{{ define "title" }}{{ .Title }}{{ with .Site.Params.blogTitle }}- {{ . }}{{ end }}{{ end }}
+{{- define "title" }}{{ .Title }} - {{ with .Site.Params.blogTitle }}{{ . }} | {{ end }}{{.Site.Title }}のブログ{{ end }}
 
 {{ define "meta" }}
   {{ partial "single_meta.html" . }}
@@ -7,9 +7,9 @@
 
 {{ define "main" }}
 <div id="breadcrumb" aria-label="パンくずリスト">
-<ol>
-  {{- template "breadcrumb" (dict "node" . "start" .) }}
-</ol>
+  <ol>
+    {{- template "breadcrumb" (dict "node" . "start" .) }}
+  </ol>
 </div>
   <article id="article">
   <header id="article-header">
@@ -21,11 +21,12 @@
       <span class="category"><svg class="icon" aria-hidden="true"><use xlink:href="#category" /></svg>
         {{- with .Params.categories -}}
           {{- range . -}}
-            <a href="{{ $.Site.BaseURL }}/categories/{{ . | urlize }}">{{ . }}</a>
+            <a href="{{ $.Site.BaseURL }}/categories/{{ . | urlize }}">{{ . }}</a> 
           {{- end -}}
         {{- end -}}
       </span>
     </div>
+    <h1>{{ .Title }}</h1>
     <div class="post-meta">
       <span class="tags">
         <svg class="icon" aria-hidden="true">

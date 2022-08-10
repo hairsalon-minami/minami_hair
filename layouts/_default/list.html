@@ -1,0 +1,19 @@
+{{- define "title" }}{{ .Title }} - {{ with .Site.Params.blogTitle }}{{ . }} |
+{{ end }}{{.Site.Title }}のブログ{{ end }} {{ define "meta" }}
+<meta name="robots" content="noindex" />
+{{ end }} {{- define "main" -}}
+<header class="page-title">
+  <h1 class="title">
+    {{- if ( eq .Section "categories" ) -}} カテゴリー：{{ .Title }}の記事一覧
+    {{- else if ( eq .Section "tags" ) -}} 「 {{ .Title }}」タグの記事一覧 {{-
+    else if ( eq .Section "archives" ) -}} {{ .Title }}の記事一覧 {{- else -}}
+    {{ .Title }} {{- end -}}
+  </h1>
+</header>
+
+<div class="article-list">
+ {{- $articles := .Paginate .RegularPages -}} {{- range
+  $articles.Pages -}} {{- .Render "li" -}} {{- end -}}
+</div>
+</div>
+{{ template "_internal/pagination.html" . }} {{- end -}}
