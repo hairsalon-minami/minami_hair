@@ -1,6 +1,9 @@
-<div>
-  <h1><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></h1>
-  {{- with .Site.Params.Description }}
-  <div>{{ . | markdownify }}</div>
-  {{ end -}}
+{{ if .IsHome }}
+<h1 class="site-header">
+  <a href="{{ .Site.BaseURL }}"><svg class="logo" alt="ヘアーサロンみなみ"><use xlink:href="#logo" /></svg></a>
+</h1>
+{{ else }}
+<div class="site-header">
+  <a href="{{ .Site.BaseURL }}"><svg class="logo" alt="ヘアーサロンみなみ"><use xlink:href="#logo" /></svg></a>
 </div>
+{{ end }}

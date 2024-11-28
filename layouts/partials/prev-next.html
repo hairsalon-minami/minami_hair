@@ -1,23 +1,16 @@
-<div class="prev-next">
+<div class="prev-next" role="navigation" aria-label="新しい記事・過去の記事">
   {{ with .Next }}
   <p id="next-article">
-    <a href="{{ .RelPermalink }}"
-      ><span
-        ><svg class="icon" aria-hidden="true">
-          <use xlink:href="#leftArrow" /></svg
-        >新しい記事</span
-      >{{ .Title }}</a
-    >
+    <a href="{{ .RelPermalink }}">
+      <span><svg class="icon" aria-hidden="true"><use xlink:href="#leftArrow" /></svg>新しい記事</span>{{ .Title }}
+    </a>
   </p>
-  {{ end }} {{ with .Prev }}
+  {{ end }}
+  {{ with .Prev }}
   <p id="prev-article">
     <a href="{{ .RelPermalink }}">
-      <span
-        >過去の記事<svg class="icon" aria-hidden="true">
-          <use xlink:href="#rightArrow" />
-        </svg> </span
-      >{{ .Title }}</a
-    >
+      <span>過去の記事<svg class="icon" aria-hidden="true"><use xlink:href="#rightArrow" /></svg></span>{{ .Title }}
+    </a>
   </p>
   {{ end }}
 </div>

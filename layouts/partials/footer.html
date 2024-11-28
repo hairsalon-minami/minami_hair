@@ -1,42 +1,35 @@
-<figure class="access">
-  <div>
-    <figcaption>店舗情報</figcaption>
-    <address>
-      <span>住所</span><span>大阪府大阪市鶴見区諸口1丁目10-45</span> <span>電話番号</span><span>06-6911-0635</span>
-      <span>営業時間</span><span>8:30 ～ 20:00 （最終受付 19:30)</span> <span>定休日</span
-      ><span>毎週月曜日 / 第2・3月曜翌日の火曜日</span>
-    </address>
+{{/*
+<div class="shop">
+  <div class="logo">
+    <svg class="icon" alt="ヘアーサロンみなみ">
+      <use xlink:href="#logo" />
+    </svg>
   </div>
-  <iframe
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2296.1320630777154!2d135.57707537127973!3d34.699844323649685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe6484444db8ce5a!2z44OY44Ki44O844K144Ot44Oz44G_44Gq44G_!5e0!3m2!1sja!2sjp!4v1467968459664"
-    class="map"
-    frameborder="0"
-    style="border: 0"
-    allowfullscreen
-    loading="”lazy”"
-  ></iframe>
-</figure>
-<div class="footer-info">
-  <svg class="logo" alt="ヘアーサロンみなみ">
-    <use xlink:href="#logo" />
-  </svg>
-
-  {{ $currentNode := . }}
-  {{ if .Site.Menus.footer }}
-    <div class="navigation" role="navigation" aria-label="フッター">
-      <ul>
-        {{ range .Site.Menus.footer }}
-          <li>
-            <a class="" href="{{ .URL }}">
-              {{ .Pre }}
-              <span>{{ .Name }}</span>
-            </a>
-          </li>
-        {{ end }}
-      </ul>
-    </div>
-  {{ end }}
+  <address>大阪市鶴見区諸口1-10-45<br />06-6911-0635</address>
 </div>
-<p class="copyright">
+*/}}
+<div class="sns">
+  {{/*
+  <a href="https://www.facebook.com/minami.hairsalon"
+    ><svg class="icon" alt="フェイスブック">
+      <use xlink:href="#facebook" /></svg
+  ></a>
+  */}}
+  <a href="https://www.instagram.com/minami_hairsalon/"><svg class="icon" alt="インスタグラム"><use xlink:href="#instagram" /></svg></a>
+  <a href="https://twitter.com/minamihairsalon"><svg class="icon" alt="X(旧ツイッター）"><use xlink:href="#x" /></svg></a>
+</div>
+{{ $currentNode := . }}
+{{ if .Site.Menus.footer }}
+<div class="navigation" role="navigation" aria-label="フッターナビゲーション">
+  <ul>
+    {{ range .Site.Menus.footer }}
+    <li>
+      <a href="{{ .URL }}">{{ .Pre }}<span>{{ .Name }}</span></a>
+    </li>
+    {{ end }}
+  </ul>
+</div>
+{{ end }}
+<p class="copyright-powered">
   <small>{{ with .Site.Copyright }}{{ . | safeHTML }}{{ else }}&copy; {{ .Site.Title }}{{ end }}</small>
 </p>

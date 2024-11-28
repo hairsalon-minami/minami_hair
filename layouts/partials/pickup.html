@@ -1,0 +1,11 @@
+{{- $pick := where site.RegularPages "Params.pickup" true -}}
+{{- if $pick -}}
+<nav id="pickup" aria-labelledby="pickup-navigation">
+  <header class="sidebar-title" id="pickup-navigation"><svg class="icon" aria-hidden="true"><use xlink:href="#check" /></svg>ピックアップ記事</header>
+  <ul class="content">
+    {{- range first 2 $pick -}}
+    {{- .Render "li" -}}
+    {{- end -}}
+  </ul>
+</nav>
+{{- end -}}

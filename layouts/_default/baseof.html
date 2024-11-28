@@ -5,43 +5,42 @@
 <head>
 
   <meta charset="utf-8">
-  <title>{{ block "title" . }}{{ end }}{{ if not ( or ( eq .Section "blog" ) ( eq .Section "categories" ) ( eq .Section "tags" ) ( eq .Section "archives" )) }} - {{ .Site.Title }}{{ end }}</title>
+  <title>{{ block "title" . }}{{ end }}{{ if not .IsHome }} - {{ .Site.Title }}{{ end }}</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="format-detection" content="telephone=no">
   {{ with .Site.Params.contact }}<meta name="contact" content="{{ . }}">{{ end }}
   {{ hugo.Generator }}
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
-  <link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
-  <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="theme-color" content="#ffffff">
+  <!-- favicon -->
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" type="image/png" href="/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="/icon-192x192.png">
   
   {{- block "meta" . }}{{ end -}}
   
   <link rel="canonical" href="{{ .Permalink }}">
   
-  {{- range .AlternativeOutputFormats }}
-  <link rel="{{ .Rel }}" type="{{ .MediaType.Type | html }}" href="{{ .Permalink | safeURL }}" title="{{ $.Site.Title | safeHTML }}">
-  {{- end }}
-  {{- range .AlternativeOutputFormats }}
-    {{- printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML -}}
+  {{ range .AlternativeOutputFormats -}}
+  {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
   {{ end -}}
-  
-  {{ $baseS := resources.Get "css/base.min.css" | resources.Fingerprint }}
-  <link rel="stylesheet" href="{{ $baseS.Permalink }}">
-  
-  {{ if or ( eq .Section "blog" ) ( eq .Section "categories" ) ( eq .Section "tags" ) ( eq .Section "archives" ) }}
-    {{ $blogS := resources.Get "css/blog.min.css" | resources.Fingerprint }}
-  <link rel="stylesheet" href="{{ $blogS.Permalink }}">
-  {{ end }}
-  
-  <style>
-    #symbol-defs{ display: none }
-  </style>
 
-  {{ if not .Site.IsServer }}
+  
+  {{/*  {{ $baseS := resources.Get "css/base.min.css" | resources.Fingerprint }}
+  <link rel="stylesheet" href="{{ $baseS.Permalink }}">  */}}
+  <link href="/css/base.min.css?{{ readFile "static/css/base.min.css" | md5 }}" rel="stylesheet">
+  
+  {{ if or ( eq .Section "blog" ) ( eq .Section "categories" ) ( eq .Section "tags" ) ( eq .Section "archives" ) ( eq .Section "search" ) }}
+  {{/*  {{ $blogS := resources.Get "css/blog.min.css" | resources.Fingerprint }}
+  <link rel="stylesheet" href="{{ $blogS.Permalink }}">  */}}
+  <link href="/css/blog.min.css?{{ readFile "static/css/blog.min.css" | md5 }}" rel="stylesheet">
+  {{ else }}
+  {{/*  {{ $shopS := resources.Get "css/shop.min.css" | resources.Fingerprint }}
+  <link rel="stylesheet" href="{{ $shopS.Permalink }}">  */}}
+  <link href="/css/shop.min.css?{{ readFile "static/css/shop.min.css" | md5 }}" rel="stylesheet">
+  {{ end }}
+
+  <style>#symbol-defs{display:none}</style>
+  
+  {{ if not hugo.IsServer }}
   
     {{ with .Site.GoogleAnalytics }}
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -61,25 +60,13 @@
   {{ end }}
 </head>
 
-{{ if or ( eq .Section "blog" ) ( eq .Section "categories" ) ( eq .Section "tags" ) ( eq .Section "archives" ) }}
-
-<body ontouchstart="" class="blog">
-{{ partial "symbol-def.svg" }}
-
-<header id="header">
-{{ partial "header-blog.html" . }} 
-</header>
-
-{{ else }}
 
 <body ontouchstart="">
-{{ partial "symbol-def.svg" }}
+{{ partial "symbol-def.html" . }}
 
 <header id="header">
 {{ partial "header.html" . }} 
 </header>
-
-{{ end }}
 
 {{ partial "navigation.html" . }}
 
@@ -87,10 +74,12 @@
 {{ block "main" . }}{{ end }}
 </main>
 
-{{ if or ( eq .Section "blog" ) ( eq .Section "categories" ) ( eq .Section "tags" ) ( eq .Section "archives" ) }}
+{{ if or ( eq .Section "blog" ) ( eq .Section "categories" ) ( eq .Section "tags" ) ( eq .Section "archives" ) ( eq .Section "search" ) }}
 <aside id="sidebar">
+{{/* partial "adsense.html" . */}}
 {{ partial "sidebar.html" . }} 
-{{ partial "latest.html" . }} 
+{{ partial "pickup.html" . }}
+{{ partial "latest.html" . }}
 </aside>
 {{ end }}
 
@@ -98,5 +87,6 @@
 {{ partial "footer.html" . }} 
 </footer>
 
+{{ block "script" . }}{{ end }}
 </body>
 </html>

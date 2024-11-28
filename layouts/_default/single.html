@@ -1,4 +1,4 @@
-{{- define "title" }}{{ .Title }} - {{ with .Site.Params.blogTitle }}{{ . }} | {{ end }}{{.Site.Title }}のブログ{{ end }}
+{{- define "title" }}{{ .Title }}{{ with .Site.Params.blogTitle }} - {{ . }}{{ end }}{{ end }}
 
 {{ define "meta" }}
   {{ partial "single_meta.html" . }}
@@ -13,52 +13,57 @@
 </div>
   <article id="article">
   <header id="article-header">
-    <div class="post-meta">
-      <span class="time">
+    <div class="time">
         <time datetime="{{ .Lastmod.Format "2006-01-02T15:04:05JST" }}"
           >{{ .Lastmod.Format ( .Site.Params.dateformat | default "Jan 2, 2006") }}</time>
-      </span>
-      <span class="category"><svg class="icon" aria-hidden="true"><use xlink:href="#category" /></svg>
-        {{- with .Params.categories -}}
-          {{- range . -}}
-            <a href="{{ $.Site.BaseURL }}/categories/{{ . | urlize }}">{{ . }}</a> 
-          {{- end -}}
-        {{- end -}}
-      </span>
     </div>
-    <h1>{{ .Title }}</h1>
+    <h1 class="article-title">{{ .Title }}</h1>
     <div class="post-meta">
+      {{- with .Params.categories -}}
+      <span class="category">
+        <svg class="icon" aria-hidden="true"><use xlink:href="#category" /></svg>
+        
+          {{- range . -}}
+            <a href="{{ $.Site.BaseURL }}/blog/categories/{{ . | urlize }}">{{ . }}</a> 
+          {{- end -}}
+        
+      </span>
+      {{- end -}}
+      {{- with .Params.tags -}}
       <span class="tags">
         <svg class="icon" aria-hidden="true">
           <use xlink:href="#tag" />
         </svg>
-        {{- with .Params.tags -}}
+        <span class="item">
+        
           {{- range . -}}
-            <a href="{{ $.Site.BaseURL }}/tags/{{ . | urlize }}">{{ . }}</a>
+            <a href="{{ $.Site.BaseURL }}/blog/tags/{{ . | urlize }}">{{ . }}</a>
           {{- end -}}
-        {{- end -}}
+        
       </span>
+      </span>
+      {{- end -}}
       {{- if .Draft }}
           <span style="color: #2196f3;">DRAFT</span>
       {{- end -}}
     </div>
+    {{ partial "share.html" . }} 
   </header>
-  
-  {{ if .Params.toc }}
-    {{ .TableOfContents }}
-  {{ end }}
-
   <div id="article-content">
     {{ .Content }}
   </div>
-
   <footer class="article-footer">
+  {{ partial "share.html" . }} 
   {{ partial "related.html" . }}   
+  {{ partial "comments.html" . }}  
   </footer>
   </article>
 
   {{ partial "prev-next.html" . }}
-  <!-- コメント -->
-  {{ template "_internal/disqus.html" . }}
+  
 
+{{ end }}
+
+{{ define "script" }}
+{{- if .Params.toc }}<script src="/js/toc.js" async></script>{{ end -}}
 {{ end }}

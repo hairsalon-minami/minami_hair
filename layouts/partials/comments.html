@@ -1,0 +1,18 @@
+{{- if not hugo.IsServer -}}
+{{- with .Params.categories -}}
+{{- range . -}}
+
+{{- if ne . "お知らせ" }} 
+<div id="cusdis_thread"
+data-host="https://cusdis.com"
+data-app-id="c2c4b667-bdb7-4a55-adc0-a28e2b6a25c6"
+data-page-id="{{ $.RelPermalink }}"
+data-page-url="{{ $.Permalink }}"
+data-page-title="{{ $.Title }}"
+data-theme="light"
+></div>
+<script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
+{{- end -}}
+{{- end -}}
+{{- end -}}
+{{- end -}}

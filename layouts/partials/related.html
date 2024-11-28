@@ -1,32 +1,11 @@
 {{ $related := .Site.RegularPages.Related . | first 5 }}
 {{ with $related }}
-<div id="related">
-  <p class="related-title">あわせて読みたい関連記事</p>
+<nav id="related">
+  <header class="related-title">あわせて読みたい関連記事</header>
   <ul class="content">
   {{ range . }}
-  <li>
-    <a href="{{ .RelPermalink }}">
-      <article class="related-article">    
-        <img
-        src="
-        {{- with .Resources.GetMatch "thumbnail.**" -}}
-          {{- $image := .Fill "200x200" -}}
-          {{- $image.RelPermalink -}}
-        {{- else }}
-          /images/thumbnail-200x200.png
-        {{ end -}}
-           "
-        alt=""
-        decoding="async"
-        loading="lazy"
-        class="thumbnail"
-        />
-        <h2 class="title">{{ .Title }}</h2>
-        <time class="date" datetime="{{ .Date.Format "2007-01-02T15:04:05JST" }}">{{ .Date.Format ( .Site.Params.dateformat | default "Jan 2, 2006") }}</time>
-      </article>
-    </a>
-  </li>
+  {{- .Render "li" -}}
   {{ end }}
   </ul>
-</div>
+</nav>
 {{ end }}

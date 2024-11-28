@@ -1,10 +1,35 @@
+{{ if or ( eq .Kind "page" ) ( eq .Section "categories" ) ( eq .Section "tags" ) ( eq .Section "archives" ) ( eq .Section "search" ) }}
+<div class="blog-title">
+  <a href="{{ .Site.BaseURL }}/blog">
+    {{- with .Site.Params.blogTitle -}}
+    {{- . | markdownify -}}
+    {{- else -}}
+    {{- .Site.Title }}のブログ
+    {{- end -}}
+  </a>
+</div>
+<div class="blog-description">
+  {{- with .Site.Params.blogDescription -}}
+  {{ . | markdownify }}
+  {{- else -}}
+  presented by {{ .Site.Title }}
+  {{- end -}}
+</div>
+{{ else }}
 <h1 class="blog-title">
   <a href="{{ .Site.BaseURL }}/blog">
-    {{- with .Site.Params.blogTitle -}} {{- . | markdownify -}} {{- else -}} {{-
-    .Site.Title }}のブログ {{- end -}}
+    {{- with .Site.Params.blogTitle -}}
+    {{- . | markdownify -}}
+    {{- else -}}
+    {{- .Site.Title }}のブログ
+    {{- end -}}
   </a>
 </h1>
 <h2 class="blog-description">
-  {{- with .Site.Params.blogDescription -}} {{ . | markdownify }} {{- else -}}
-  presented by {{ .Site.Title }} {{- end -}}
+  {{- with .Site.Params.blogDescription -}}
+  {{ . | markdownify }}
+  {{- else -}}
+  presented by {{ .Site.Title }}
+  {{- end -}}
 </h2>
+{{ end }}

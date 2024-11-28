@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>トピックス on ヘアーサロンみなみ</title>
+    <link>http://localhost:1313/blog/categories/%E3%83%88%E3%83%94%E3%83%83%E3%82%AF%E3%82%B9/</link>
+    <description>Recent content in トピックス on ヘアーサロンみなみ</description>
+    <generator>Hugo</generator>
+    <language>ja-jp</language>
+    <copyright>© 2023 ヘアーサロンみなみ&lt;br&gt;Powered by Hugo</copyright>
+    <lastBuildDate>Thu, 27 Apr 2023 16:07:58 +0900</lastBuildDate>
+    <atom:link href="http://localhost:1313/blog/categories/%E3%83%88%E3%83%94%E3%83%83%E3%82%AF%E3%82%B9/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>話題のChatGPTに、ヘアダメージについて質問してみた</title>
+      <link>http://localhost:1313/blog/chatgpt-listen/</link>
+      <pubDate>Thu, 27 Apr 2023 16:07:58 +0900</pubDate>
+      <guid>http://localhost:1313/blog/chatgpt-listen/</guid>
+      <description>&lt;p&gt;ChatGPTってありますでしょ？「質問すると、AI（人口知能）が人間のように答えてくれる」という話題のサービス。&lt;/p&gt;&#xA;&lt;p&gt;これがどういう仕組みかといえば、インターネットにある膨大な量の情報をコンピュータ（AI）が学習し、人間が話すように言語を生成して答えるという、まるでアニメやSF映画のような技術です。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,14 +1,121 @@
-{{- define "title" }}{{ .Site.Title }}{{ with .Site.Params.secondTitle }}{{ . }}{{ end }}{{ end -}}
+{{- define "title" }}{{ .Site.Title }}{{ with .Site.Params.secondTitle }}{{ .}}{{ end }}{{ end -}} {{- define "meta" }}
+<noscript>
+  <style>
+    .calendars {
+      display: none;
+    }
+  </style>
+</noscript>
+{{ end -}} {{- define "main" }}
+<div class="top-image">
+  <img class="images" src="images/image01.jpg" decoding>
+  <img class="images" src="images/image02.jpg" decoding>
+  <img class="images" src="images/image03.jpg" decoding>
+  <img class="images" src="images/image04.jpg" decoding>
+  {{- with .Site.Params.Description }}
+  <h2 class="sab-title"><span>{{ . | markdownify }}</span></h2>
+  {{ end -}}
+</div>
+<div class="shop-description">{{ .Content }}</div>
+{{- $blogs := where site.RegularPages "Section" "blog" -}}
+{{- if $blogs -}}
+<div class="blog-info">
+  <h3>お知らせ・ブログ</h3>
+  <div class="blog-posts">
+    {{- range first 5 $blogs }}
+    {{- .Render "article" -}}
+    {{ end -}}
+    <div class="more-link">
+      <a href="{{ "/blog/" | absLangURL }}"><span>もっと見る</span></a>
+    </div>
+  </div>
+</div>
+{{- end -}}
+{{/*  {{- $blogs := where site.RegularPages "Section" "blog" -}}
+{{- if $blogs -}}
+<div class="blog-info">
+  <h3>
+    お知らせ ＆ ブログ
+  </h3>
+  <div class="blog-posts">
+    {{- range first 5 $blogs }}
+    {{- .Render "article" -}}
+    {{ end -}}
+    <div class="more-link">
+      <a href="{{ "/blog/" | absLangURL }}"><span>もっと見る</span></a>
+    </div>
+  </div>
+</div>
+{{- end -}}  */}}
+<div id="about">
+<div class="access">
+  <h3>店舗情報</h3>
+  <div class="address">
+    <table class="shop-info">
+      <tr>
+        <th>住所</th>
+        <td>大阪府大阪市鶴見区諸口１丁目１０－４５</td>
+      </tr>
+      <tr>
+        <th>電話番号</th>
+        <td>06-6911-0635</td>
+      </tr>
+      <tr>
+        <th>営業時間</th>
+        <td>8:30 ～ 20:00 （最終受付 19:30)</td>
+      </tr>
+      <tr>
+        <th>定休日</th>
+        <td>毎週月曜日 / 第2・3月曜翌日の火曜日</td>
+      </tr>
+      <tr>
+        <td colspan="2" class="public"><span aria-hidden="true">※</span>公共交通機関をご利用の方は、<a href="{{ "/blog/public-routes/" | absLangURL }}">こちら</a>をご参考にしてください。</td>
+      </tr>
+    </table>
+  </div>
+  {{/*
+  <div class="public">
+    <h3>公共交通機関からのアクセス</h3>
+    <h4>電車でお越しの方</h4>
+    <p>大阪メトロ 鶴見緑地線『横堤駅』５番または６番出口より徒歩１０分ほど</p>
+    <p>JR 学研都市線『徳庵駅』西出口より徒歩１５分ほど</p>
+    <h4>バスでお越しの方</h4>
+    <p>近鉄バス阪奈生駒線『諸口』バス停より徒歩６分ほど</p>
+    <p>大阪シティバス４５系統『諸口２丁目』バス停より徒歩４分ほど</p>
+    <p>
+      大阪シティバス４５系または４６系統『諸口１丁目』バス停より徒歩５分ほど
+    </p>
+  </div>
+  */}}
+  <div class="map">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2296.1320630777154!2d13557707537127973!3d34.699844323649685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f10!3m3!1m2!1s0x0%3A0xe6484444db8ce5a!2z44OY44Ki44O844K144Ot44Oz44G_44Gq44G_!5e0!3m2!1sja!2sjp!4v146796849664"
+      class="google-map"
+      frameborder="0"
+      style="border: 0"
+      allowfullscreen
+      loading="lazy"
+      title="アクセスマップ"
+    ></iframe>
+    <div id="appleLink">
+      <a
+        href="https://maps.apple.com/?q=大阪府大阪市鶴見区諸口１−１０−４５ ヘアーサロンみなみ"
+        >または、Appleマップで開く</a
+      >
+      <script>
+        const isIOS = /iP(hone|(o|a)d)|mac/.test(navigator.userAgent);
+        if (!isIOS) document.getElementById("appleLink").style.display = "none";
+      </script>
+    </div>
+  </div>
+</div>
 
-{{- define "main" }}
-
-  {{ .Content }}
-
-
-  <div class="text-xl">ブログ</div>
-  <ul>
-    {{ range first 4 ( where site.RegularPages "Section" "blog" ) }}
-      {{- .Render "li" -}}
-    {{ end }}
-  </ul>
+<div class="calendars">
+  <h3 id="calendar">営業日カレンダー</h3>
+  <div id="businessCalendar"></div>
+</div>
+</div>
 {{ end -}}
+{{- define "script" -}}
+<script src="/js/calendar.js" async></script>
+{{- end -}}

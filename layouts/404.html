@@ -1,10 +1,12 @@
-{{ define "title" }}{{ .Title }}{{ end }} {{ define "meta" }}
+{{ define "title" }}{{ .Title }}{{ end }}
+
+{{ define "meta" }}
 <meta name="robots" content="noindex" />
-{{ end }} {{ define "main" }}
+{{ end }}
+
+{{ define "main" }}
 <div id="page404">
-  <h1 class="text-xl text-red-500 bg-blue-500">
-    お探しのページが見つかりません。
-  </h1>
+  <h1 class="title">お探しのページが見つかりません。</h1>
   <p>
     誠に申し訳ございませんが、<br />
     アクセスしようとしたページが見つかりませんでした。<br />
@@ -12,18 +14,25 @@
     無効になっている可能性があります。
   </p>
   <p>
-    大変お手数ですが<a href="">こちらの問い合わせフォーム</a
-    >にてリンクが無効になっていたページのURL等などをお知らせ下さい。
+    大変お手数ですが<a href="https://forms.gle/H88EyQm9MrZREFFB9">こちらの問い合わせフォーム</a>にて<br />
+    リンクが無効になっていたことや、<br />
+    アクセスしたページのURLなどをお知らせ下さい。<br />
     いただきました情報を参考に対応させて頂きます。
   </p>
+  {{if .Site.Menus.main }}
   <p>
-    また、お探しのページがブログ記事でしたら、<br />
-    下記のツールがお役に立つかもしれません。<br />
+    またページをお探しでしたら、<br />
+    下記のリンクがお役に立つかもしれません。<br />
     ぜひともご活用ください。
   </p>
-
-  {{ partial "sidebar.html" . }}
-
-  <a href="{{ .Site.BaseURL }}">HOMEへ</a>
+  <nav class="navigation" role="navigation" aria-label="404ナビゲーション">
+    {{- range .Site.Menus.main -}}
+    <li>
+      <a href="{{ .URL }}">{{ .Name }}</a>
+    </li>
+    {{- end -}}
+  </nav>
+  {{ end }}
+  <p><a href="{{ .Site.BaseURL }}">サイトのHOMEに移動する。</a></p>
 </div>
 {{ end }}

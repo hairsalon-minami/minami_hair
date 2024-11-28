@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>よもやま話 on ヘアーサロンみなみ</title>
+    <link>https://minami-hair.com/blog/categories/%E3%82%88%E3%82%82%E3%82%84%E3%81%BE%E8%A9%B1/</link>
+    <description>Recent content in よもやま話 on ヘアーサロンみなみ</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <copyright>© 2022 ヘアーサロンみなみ</copyright>
+    <lastBuildDate>Fri, 09 Oct 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://minami-hair.com/blog/categories/%E3%82%88%E3%82%82%E3%82%84%E3%81%BE%E8%A9%B1/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Test3</title>
+      <link>https://minami-hair.com/blog/202200806/</link>
+      <pubDate>Fri, 09 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://minami-hair.com/blog/202200806/</guid>
+      <description>段落 あのイーハトヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモーリオ市、郊外のぎらぎら光る草の波。 あのイーハ</description>
+    </item>
+    
+    <item>
+      <title>Test3</title>
+      <link>https://minami-hair.com/blog/20221226/</link>
+      <pubDate>Fri, 09 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://minami-hair.com/blog/20221226/</guid>
+      <description>段落 あのイーハトヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモーリオ市、郊外のぎらぎら光る草の波。 あのイーハ</description>
+    </item>
+    
+    <item>
+      <title>おすすめです2</title>
+      <link>https://minami-hair.com/blog/pickup/</link>
+      <pubDate>Fri, 09 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://minami-hair.com/blog/pickup/</guid>
+      <description>段落 あのイーハトヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモーリオ市、郊外のぎらぎら光る草の波。 あのイーハ</description>
+    </item>
+    
+  </channel>
+</rss>

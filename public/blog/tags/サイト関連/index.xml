@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>サイト関連 on ヘアーサロンみなみ</title>
+    <link>http://localhost:1313/blog/tags/%E3%82%B5%E3%82%A4%E3%83%88%E9%96%A2%E9%80%A3/</link>
+    <description>Recent content in サイト関連 on ヘアーサロンみなみ</description>
+    <generator>Hugo</generator>
+    <language>ja-jp</language>
+    <copyright>© 2023 ヘアーサロンみなみ&lt;br&gt;Powered by Hugo</copyright>
+    <lastBuildDate>Fri, 01 Nov 2024 08:30:00 +0900</lastBuildDate>
+    <atom:link href="http://localhost:1313/blog/tags/%E3%82%B5%E3%82%A4%E3%83%88%E9%96%A2%E9%80%A3/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>サイトリニューアルのお知らせ</title>
+      <link>http://localhost:1313/blog/renewal/</link>
+      <pubDate>Fri, 01 Nov 2024 08:30:00 +0900</pubDate>
+      <guid>http://localhost:1313/blog/renewal/</guid>
+      <description>&lt;p&gt;このたびサイトをリニューアルしました。&lt;/p&gt;&#xA;&lt;p&gt;以前のようなペライチのページではなく、メニューや料金、予約・問い合わせなどのページを増やし、必要な情報にアクセスしやすくいたしました。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

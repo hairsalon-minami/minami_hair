@@ -1,0 +1,6 @@
+{{- if .Get "href" -}}
+<a href="{{ .Get "href" | safeURL }}" target="_blank" rel="noopener">
+{{- if .Get "text" -}}{{- .Get "text" -}}{{- else -}}{{- .Get "href" -}}{{- end -}}</a>
+{{- else -}}
+  {{ errorf "missing value for param 'url': ％s" .Position }}
+{{- end -}}

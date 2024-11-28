@@ -1,12 +1,13 @@
-<div class="categories">
-  <p class="title">
-    <svg class="icon" aria-hidden="true">
-      <use xlink:href="#category" /></svg
-    ><a href="/categories/">カテゴリー</a>
-  </p>
+<nav class="categories" aria-labelledby="categories-navigation">
+  <header class="title" id="categories-navigation">
+    <svg class="icon" aria-hidden="true"><use xlink:href="#category" /></svg><a href="{{ "/blog/categories/" | absLangURL }}">カテゴリー</a>
+  </header>
   <ul class="content">
-    {{- range .Site.Taxonomies.categories.ByCount }}
-    <li><a href="{{ "/categories/" | absLangURL }}{{ .Name  | urlize }}">{{ .Name }} ({{ .Count }})</a></li>
+    {{- range .Site.Taxonomies.categories.Alphabetical.Reverse }}
+    <li><a href="/blog/categories/{{ .Name  | urlize }}">{{ .Name }} ({{ .Count }})</a></li>
     {{- end -}}
+    {{/*  <li><a href="/blog/categories/{{ "理容美容" | urlize }}">理容美容</a></li>
+    <li><a href="/blog/categories/{{ "トピックス" | urlize }}">トピックス</a></li>
+    <li><a href="/blog/categories/{{ "お知らせ" | urlize }}">お知らせ</a></li>  */}}
   </ul>
-</div>
+</nav>

@@ -1,5 +1,5 @@
-{{- $paginator := .Paginate .RegularPages -}} {{- if gt $paginator.TotalPages 1
--}}
+{{- $paginator := .Paginate .RegularPages -}}
+{{- if gt $paginator.TotalPages 1 -}}
 <div class="blog-pagination">
   {{- with $paginator.HasPrev -}}
   <a class="prev" href="{{ $paginator.Prev.URL }}">前へ</a>

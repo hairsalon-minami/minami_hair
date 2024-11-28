@@ -1,0 +1,32 @@
+<article>
+  <a href="{{ .RelPermalink }}">
+    <img src="
+      {{- with .Resources.GetMatch "thumbnail.**" -}}
+      {{- $image := . -}}
+      {{- $image.RelPermalink -}}
+      {{- else }}/images/default.png{{ end -}}
+      "
+       alt=""
+       decoding
+       class="thumbnail" />
+    {{/*  <div class="wrapper">  */}}
+      <h2 class="title">{{ .Title }}</h2>
+      <div class="post-meta">
+          <time datetime="{{ .Date.Format "2006-01-02T15:04:05JST" }}">
+            {{ .Date.Format ( .Site.Params.dateformat | default "Jan 2, 2006") }}
+          </time>
+          {{- with .Params.categories -}}
+          <span><svg class="icon" aria-hidden="true">
+            <use xlink:href="#category" /></svg>
+            {{- range . -}}
+            <span>{{ . }}</span>
+            {{- end -}}
+          </span>
+          {{- end -}}
+          {{ if .Draft }}
+              <span style="color: #2196f3;">DRAFT</span>b
+          {{ end }}
+      </div>
+    {{/*  </div>  */}}
+    </a>
+  </article>

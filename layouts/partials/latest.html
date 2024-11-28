@@ -1,29 +1,8 @@
-<div id="latest">
-  <p class="sidebar-title">新着記事</p>
+<nav id="latest" aria-labelledby="latest-navigation">
+  <header class="sidebar-title" id="latest-navigation"><svg class="icon" aria-hidden="true"><use xlink:href="#kiji" /></svg>新着記事</header>
   <ul class="content">
-    {{- range first 6 .Site.RegularPages.ByLastmod.Reverse -}}
-    <li>
-      <a href="{{ .RelPermalink }}">
-        <article class="latest-article">    
-          <img
-          src="
-          {{- with .Resources.GetMatch "thumbnail.**" -}}
-            {{- $image := .Fit "320x180" -}}
-            {{- $image.RelPermalink -}}
-          {{- else }}
-            /images/thumbnail-320x180.png
-          {{ end -}}
-             "
-          alt=""
-          decoding="async"
-          loading="lazy"
-          class="thumbnail"
-          />
-          <h2 class="title">{{ .Title }}</h2>
-          <time class="date" datetime="{{ .Lastmod.Format "2007-01-02T15:04:05JST" }}">{{ .Lastmod.Format ( .Site.Params.dateformat | default "Jan 2, 2006") }}</time>
-        </article>
-      </a>
-    </li>
+    {{- range first 8 .Site.RegularPages.ByLastmod.Reverse -}}
+    {{- .Render "li" -}}
     {{- end -}}
   </ul>
-</div>
+</nav>

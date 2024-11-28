@@ -1,10 +1,12 @@
-<div class="tags">
-  <p class="title">
-    <svg class="icon" aria-hidden="true"><use xlink:href="#tag" /></svg><a href="/tags/">タグ</a>
-  </p>
+<nav class="tags" aria-labelledby="tags-navigation">
+  <header class="title" id="tags-navigatio">
+    <svg class="icon" aria-hidden="true"><use xlink:href="#tag" /></svg><a href="{{ "/blog/tags/" | absLangURL }}">タグ</a>
+  </header>
   <ul class="content">
     {{- range .Site.Taxonomies.tags.ByCount }}
-    <li><a href="{{ "/tags/" | absLangURL }}{{ .Name  | urlize }}">{{ .Name }} ({{ .Count }})</a></li>
+    <li>
+      <a href="/blog/tags/{{ .Name  | urlize }}">{{ .Name }} ({{ .Count }})</a>
+    </li>
     {{- end -}}
   </ul>
-</div>
+</nav>

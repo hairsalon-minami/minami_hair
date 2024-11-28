@@ -1,0 +1,12 @@
+{{- define "title" }}{{ .Title }} - {{ with .Site.Params.blogTitle }}{{ . }} | {{ end }}{{.Site.Title }}のブログ{{ end }}
+
+{{ define "meta" }}
+<meta name="robots" content="noindex" />
+{{ end }}
+
+{{- define "main" -}}
+<header class="page-title">
+  <h1 class="title">{{ .Title }}</h1>
+</header>
+{{ .Content }}
+{{ end }}

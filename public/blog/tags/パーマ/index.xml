@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>パーマ on ヘアーサロンみなみ</title>
+    <link>http://localhost:1313/blog/tags/%E3%83%91%E3%83%BC%E3%83%9E/</link>
+    <description>Recent content in パーマ on ヘアーサロンみなみ</description>
+    <generator>Hugo</generator>
+    <language>ja-jp</language>
+    <copyright>© 2023 ヘアーサロンみなみ&lt;br&gt;Powered by Hugo</copyright>
+    <lastBuildDate>Fri, 28 Apr 2023 17:13:59 +0900</lastBuildDate>
+    <atom:link href="http://localhost:1313/blog/tags/%E3%83%91%E3%83%BC%E3%83%9E/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>あなたの参考になるかもしれない理美容系ブログ＆SNS</title>
+      <link>http://localhost:1313/blog/blog-sns/</link>
+      <pubDate>Fri, 28 Apr 2023 17:13:59 +0900</pubDate>
+      <guid>http://localhost:1313/blog/blog-sns/</guid>
+      <description>&lt;figure&gt;&#xD;&#xA;  &lt;img decoding&#xD;&#xA;  src=&#34;thumbnail.jpg&#34;width=&#34;500&#34;height=&#34;333&#34;alt=&#34;&#34;&#xD;&#xA;  /&gt;&#xD;&#xA;  &#xD;&#xA;&lt;/figure&gt;&#xD;&#xA;&#xA;&lt;p&gt;技術やケミカル、ヘアケアなどで参考にしている、理美容系のブログやSNSをご紹介します。&lt;/p&gt;&#xA;&lt;p&gt;理美容師はもちろんのこと、理美容師以外の方でも、何かのヒントになるかもしれませんし、シンプルに読み物や動画などとしても楽しめます。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

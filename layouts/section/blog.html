@@ -1,0 +1,12 @@
+{{- define "title" }}{{ .Title }}{{ end -}}
+{{- define "main" -}}
+{{ .Content }}
+<div class="articles">
+  {{- $articles := .Paginate .RegularPages -}}
+  {{- range $articles.Pages -}}
+    {{- .Render "article" -}}
+  {{- end -}}
+</div>
+<!-- ページネーション -->
+  {{ template "_internal/pagination.html" . }}
+{{- end -}}

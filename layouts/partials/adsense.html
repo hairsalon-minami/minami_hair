@@ -1,12 +1,16 @@
+{{- with .Site.Params.GoogleAdsense -}}
 <div class="ads-sidebar">
-<!-- 広告（サイド1） -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-4153622740669767"
-     data-ad-slot="7379881245"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+  <!-- 広告（サイド1） -->
+  <ins
+    class="adsbygoogle"
+    style="display: block"
+    data-ad-client="ca-pub-{{ . }}"
+    data-ad-slot="7379881245"
+    data-ad-format="auto"
+    data-full-width-responsive="true"
+  ></ins>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
 </div>
+{{- end -}}

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>店舗関連 on ヘアーサロンみなみ</title>
+    <link>http://localhost:1313/blog/tags/%E5%BA%97%E8%88%97%E9%96%A2%E9%80%A3/</link>
+    <description>Recent content in 店舗関連 on ヘアーサロンみなみ</description>
+    <generator>Hugo</generator>
+    <language>ja-jp</language>
+    <copyright>© 2023 ヘアーサロンみなみ&lt;br&gt;Powered by Hugo</copyright>
+    <lastBuildDate>Mon, 04 Nov 2024 14:30:10 +0900</lastBuildDate>
+    <atom:link href="http://localhost:1313/blog/tags/%E5%BA%97%E8%88%97%E9%96%A2%E9%80%A3/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>公共交通機関を使ってご来店されるお客様へ</title>
+      <link>http://localhost:1313/blog/public-routes/</link>
+      <pubDate>Mon, 04 Nov 2024 14:30:10 +0900</pubDate>
+      <guid>http://localhost:1313/blog/public-routes/</guid>
+      <description>&lt;figure&gt;&#xD;&#xA;  &lt;img decoding&#xD;&#xA;  src=&#34;thumbnail.jpg&#34;width=&#34;800&#34;height=&#34;450&#34;alt=&#34;&#34;&#xD;&#xA;  /&gt;&#xD;&#xA;  &#xD;&#xA;&lt;/figure&gt;&#xD;&#xA;&#xA;&lt;p&gt;当店「ヘアーサロンみなみ」へは、電車やバスなどの公共交通機関を使って来店できます。&lt;/p&gt;&#xA;&lt;p&gt;簡単ではありますが、これら公共交通機関からのご来店方法を、ご案内します。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>お店とスタッフのご紹介</title>
+      <link>http://localhost:1313/blog/staff/</link>
+      <pubDate>Sun, 03 Nov 2024 10:00:00 +0900</pubDate>
+      <guid>http://localhost:1313/blog/staff/</guid>
+      <description>&lt;p&gt;当店「ヘアーサロンみなみ」は、大阪市鶴見区の諸口1丁目にある理容店です。&lt;/P&gt;&lt;figure&gt;&#xD;&#xA;&lt;img src=&#34;thumbnail.jpg&#34;&#xD;&#xA;     decodingwidth=&#34;667&#34; height=&#34;500&#34; alt=&#34;お店の外観&#34;/&gt;&lt;/figure&gt;&lt;p&gt;仕事を始めたのはお祖父ちゃんの代で、戦後間もない頃（1945年ごろ）だと聞いています。&lt;/P&gt;&lt;figure&gt;&#xD;&#xA;&lt;img src=&#34;thumbnail.jpg&#34;&#xD;&#xA;     decodingwidth=&#34;667&#34; height=&#34;500&#34; alt=&#34;お店の外観&#34;/&gt;&lt;/figure&gt;&lt;p&gt;それから父、そして私と、親子三代にわたって、この地域で長く理容という業を続けています。&lt;/P&gt;&lt;figure&gt;&#xD;&#xA;&lt;img src=&#34;thumbnail.jpg&#34;&#xD;&#xA;     decodingwidth=&#34;667&#34; height=&#34;500&#34; alt=&#34;お店の外観&#34;/&gt;&lt;/figure&gt;&lt;p&gt;&lt;/p&gt;&#xA;&lt;p&gt;現在は店主である私と、私の母や妻に手伝ってもらいながら、ぼちぼち仕事を行っています。主として働く私は、理容歴30年以上。基本的に理容の仕事は何でもできますが、美容室のような美しいヘアスタイルは、やはりそちらのほうに軍配が上がると思います。経験してきた仕事上、あくまで理容、髪を整える仕事を得意としています（ちなみに私自身は美容師免許も持っていますが、一度も美容室で働いたことはありません）。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>当店でサロン専売品をお取り寄せ・購入ができます。</title>
+      <link>http://localhost:1313/blog/tenpan/</link>
+      <pubDate>Fri, 24 Mar 2023 19:13:38 +0900</pubDate>
+      <guid>http://localhost:1313/blog/tenpan/</guid>
+      <description>&lt;p&gt;サロン専売品とは、理容室や美容室だけで買える商品のことです。&lt;/p&gt;&#xA;&lt;p&gt;ドラッグストアやスーパーなどでもシャンプーといったヘアケア商品はありますが、そのようなお店では買えず、理容室や美容室などでしか売っていないものがサロン専売品の特徴。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
