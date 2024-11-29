@@ -31,6 +31,6 @@ jobs:
         with:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
+          password: ${{ secrets.ftp_password }}
           local-dir: ./public/
           server-dir: /hs373est1946.cloudfree.jp/public_html/
