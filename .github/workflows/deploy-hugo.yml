@@ -21,12 +21,12 @@ jobs:
         uses: peaceiris/actions-hugo@v3
         with:
           hugo-version: "0.139.2"
-          extended: true
+          # extended: true
 
       - name: Build
         run: hugo --minify
 
-      - name: 📂 Sync files
+      - name: Sync files
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: ${{ secrets.FTP_SERVER }}
