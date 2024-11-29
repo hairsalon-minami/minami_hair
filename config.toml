@@ -11,7 +11,7 @@ googleAnalytics = ""
 pagerSize = 12
 
 [markup.goldmark.renderer]
-unsafe= true
+unsafe = true
 
 [frontmatter]
 date= ["publishDate", ":filename", "date", ":fileModTime"]
@@ -20,6 +20,7 @@ lastmod = [":git", "lastmod", "date", "publishDate"]
 expiryDate = ["expiryDate"]
 
 [params]
+noindex = true
 secondTitle = " | 髪を理めてきたヘアサロン"
 blogTitle = "ブログ"
 contact = "minami.hairsalon@gmail.com"

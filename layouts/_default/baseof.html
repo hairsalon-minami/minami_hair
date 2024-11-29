@@ -5,6 +5,9 @@
 <head>
 
   <meta charset="utf-8">
+  {{- with .Site.Params.noindex }}
+  <meta name="robots" content="noindex">
+  {{ end -}}
   <title>{{ block "title" . }}{{ end }}{{ if not .IsHome }} - {{ .Site.Title }}{{ end }}</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="format-detection" content="telephone=no">
