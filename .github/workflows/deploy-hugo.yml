@@ -25,3 +25,12 @@ jobs:
 
       - name: Build
         run: hugo --minify
+
+name: Sync files
+        uses: SamKirkland/FTP-Deploy-Action@4.0.0
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./public/
+          server-dir: //hs373est1946.cloudfree.jp/public_html
