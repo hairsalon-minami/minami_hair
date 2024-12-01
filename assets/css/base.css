@@ -451,12 +451,11 @@ body {
   align-items: center;
   height: 3rem;
   background: var(--backGround-rl);
-  color: var(--textColor-r);
 }
 #header .logo {
   width: 100px;
   height: 27.1428571429px;
-  fill: currentColor;
+  fill: #f2849b;
   margin-left: 8px;
 }
 @media ((min-width: 992px)) {
