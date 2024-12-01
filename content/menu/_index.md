@@ -208,12 +208,12 @@ date: 2021-10-25T18:00:00+09:00
 <dl class="menu-price">
 <dt>洗髪（シャンプー）・セットorブローなど</dt>
 <dd><table>
-<tr><th>シャンプー（ワンシャン）</th> <td>￥600</td></tr>
-<tr><th>シャンプー（ツーシャン）</th> <td>￥1100</td></tr>
-<tr><th>セット</th>                <td>￥1100</td></tr>
-<tr><th>シャンプー+ドライ</th>       <td>￥<del>1600</del>→1100</td></tr>
-<tr><th>シャンプー+ブロー</th>       <td>￥1600</td></tr>
-<tr><th>シャンプー+セット</th>       <td>￥2200</td></tr>
+<tr><th>シャンプー（ワンシャン）</th> <td>￥500</td></tr>
+<tr><th>シャンプー（ツーシャン）</th> <td>￥1000</td></tr>
+<tr><th>セット</th>                <td>￥1000</td></tr>
+<tr><th>シャンプー+ドライ</th>       <td>￥<del>1600</del>→1000</td></tr>
+<tr><th>シャンプー+ブロー</th>       <td>￥1500</td></tr>
+<tr><th>シャンプー+セット</th>       <td>￥2000</td></tr>
 </table></dd>
 </dl>
 
