@@ -2,7 +2,7 @@
 title: "訪問理容・出張理容について"
 date: 2024-11-06T16:28:31+09:00
 categories: ["お知らせ"]
-tags: [”店舗情報”]
+tags: ["店舗情報"]
 thumbnail": "thumbnail.jpg"
 draft: false
 ---

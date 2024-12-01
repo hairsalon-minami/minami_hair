@@ -115,12 +115,12 @@ body {
   align-items: center;
   height: 3rem;
   background: var(--backGround-rl);
-  color: var(--textColor-r);
+  // color: var(--textColor-r);
   .logo {
     // logo" 700 x 190
     width: calc(700px / 7);
     height: calc(190px / 7);
-    fill: currentColor;
+    fill: #f2849b;
     margin-left: 8px;
     @media ($mq-lg) {
       width: calc(700px / 6);

@@ -20,7 +20,7 @@ lastmod = [":git", "lastmod", "date", "publishDate"]
 expiryDate = ["expiryDate"]
 
 [params]
-noindex = true
+noindex = false
 secondTitle = " | 髪を理めてきたヘアサロン"
 blogTitle = "ブログ"
 contact = "minami.hairsalon@gmail.com"
