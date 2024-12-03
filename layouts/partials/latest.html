@@ -1,7 +1,7 @@
 <nav id="latest" aria-labelledby="latest-navigation">
   <header class="sidebar-title" id="latest-navigation"><svg class="icon" aria-hidden="true"><use xlink:href="#kiji" /></svg>新着記事</header>
   <ul class="content">
-    {{- range first 8 .Site.RegularPages.ByLastmod.Reverse -}}
+    {{- range first 8 .Site.RegularPages.ByDate.Reverse -}}
     {{- .Render "li" -}}
     {{- end -}}
   </ul>
