@@ -258,7 +258,7 @@ body {
   height: 100%;
   display: grid;
   place-content: center;
-  place-items: column;
+  place-items: center;
   font-weight: bold;
   font-size: 1.5em;
   gap: 20px 0;
