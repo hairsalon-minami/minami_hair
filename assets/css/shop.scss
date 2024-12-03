@@ -365,7 +365,7 @@ body {
   }
 
   tbody tr {
-    border-bottom: 1.5px dotted currentColor;
+    border-bottom: 1px dashed currentColor;
 
     &:last-of-type {
       border: none;
