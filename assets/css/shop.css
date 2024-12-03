@@ -549,7 +549,7 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  background: radial-gradient(circle at center, transparent 0em, transparent 0.875em, green 0.875em, green 1.125em, transparent 1.125em);
+  background: radial-gradient(circle at center, transparent 0em, transparent 0.875em, forestgreen 0.875em, forestgreen 1.125em, transparent 1.125em);
 }
 
 .calendars small {
@@ -575,7 +575,7 @@ body {
   margin-right: 5px;
   height: 1.4em;
   width: 1.4em;
-  background: radial-gradient(var(--backGround) 0em, var(--backGround) 0.4em, green 0.4em, green 0.6em, var(--backGround) 0.6em, var(--backGround) 0.7em);
+  background: radial-gradient(var(--backGround) 0em, var(--backGround) 0.4em, forestgreen 0.4em, forestgreen 0.6em, var(--backGround) 0.6em, var(--backGround) 0.7em);
 }
 
 #menu-price h2,
