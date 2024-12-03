@@ -35,7 +35,7 @@ body {
 }
 .top-image .images {
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   opacity: 0;
   animation: img-anim01 20s infinite;
   z-index: 0;
@@ -217,7 +217,7 @@ body {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .blog-posts .title {
   padding: 0.5em 10px 0;
@@ -256,9 +256,10 @@ body {
 .blog-posts .more-link > a {
   aspect-ratio: 3/4;
   height: 100%;
+  width: 100%;
   display: grid;
   place-content: center;
-  flex-direction: column;
+  place-items: center;
   font-weight: bold;
   font-size: 1.5em;
   gap: 20px 0;
@@ -363,7 +364,8 @@ body {
 .shop-info .public a {
   text-decoration: underline;
 }
-.shop-info .public a:hover, .shop-info .public a:active {
+.shop-info .public a:hover,
+.shop-info .public a:active {
   opacity: 0.5;
 }
 .shop-info .public span {
@@ -427,7 +429,8 @@ body {
     box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
   }
 }
-.map #appleLink a:hover, .map #appleLink a:active {
+.map #appleLink a:hover,
+.map #appleLink a:active {
   background: var(--textColor-rg);
   color: var(--textColor-rw);
   border-color: var(--textColor-rg);
@@ -523,7 +526,14 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  background: radial-gradient(circle at center, transparent 0em, transparent 0.875em, olivedrab 0.875em, olivedrab 1.125em, transparent 1.125em);
+  background: radial-gradient(
+    circle at center,
+    transparent 0em,
+    transparent 0.875em,
+    olivedrab 0.875em,
+    olivedrab 1.125em,
+    transparent 1.125em
+  );
 }
 
 .calendars small {
@@ -549,7 +559,14 @@ body {
   margin-right: 5px;
   height: 1.4em;
   width: 1.4em;
-  background: radial-gradient(var(--backGround) 0em, var(--backGround) 0.4em, olivedrab 0.4em, olivedrab 0.6em, var(--backGround) 0.6em, var(--backGround) 0.7em);
+  background: radial-gradient(
+    var(--backGround) 0em,
+    var(--backGround) 0.4em,
+    olivedrab 0.4em,
+    olivedrab 0.6em,
+    var(--backGround) 0.6em,
+    var(--backGround) 0.7em
+  );
 }
 
 #menu-price h2,
@@ -672,7 +689,8 @@ body {
 #menu-price footer a {
   text-decoration: underline;
 }
-#menu-price footer a:hover, #menu-price footer a:active {
+#menu-price footer a:hover,
+#menu-price footer a:active {
   color: var(--linkColor-r);
 }
 #menu-price .supplement {
@@ -762,7 +780,8 @@ body {
   margin-bottom: var(--lh);
   position: relative;
 }
-#contact h2::before, #contact h2::after {
+#contact h2::before,
+#contact h2::after {
   content: "";
   bottom: -4px;
   height: 4px;
@@ -795,20 +814,31 @@ body {
   justify-content: center;
   line-height: 2.5rem;
   margin: 1.5rem 0;
-  background: linear-gradient(-45deg, hsla(var(--base-r), 56%, 95%, 0.4), hsla(var(--base-r), 56%, 99%, 0.4));
-  box-shadow: 4px 4px 16px hsl(var(--base-r), 6%, 75%), -4px -4px 16px hsl(var(--base-r), 6%, 100%);
+  background: linear-gradient(
+    -45deg,
+    hsla(var(--base-r), 56%, 95%, 0.4),
+    hsla(var(--base-r), 56%, 99%, 0.4)
+  );
+  box-shadow: 4px 4px 16px hsl(var(--base-r), 6%, 75%),
+    -4px -4px 16px hsl(var(--base-r), 6%, 100%);
   position: relative;
   top: -2px;
 }
 #contact .buttan:hover {
-  box-shadow: 2px 2px 4px hsl(var(--base-r), 6%, 75%), -2px -2px 4px hsl(var(--base-r), 6%, 100%);
+  box-shadow: 2px 2px 4px hsl(var(--base-r), 6%, 75%),
+    -2px -2px 4px hsl(var(--base-r), 6%, 100%);
   transition: top 0.2s, bottom 0.2s;
   top: 0;
 }
 #contact .buttan:active {
-  background: linear-gradient(-45deg, hsla(var(--base-r), 6%, 24%, 0.5), hsla(var(--base-r), 6%, 36%, 0.5));
+  background: linear-gradient(
+    -45deg,
+    hsla(var(--base-r), 6%, 24%, 0.5),
+    hsla(var(--base-r), 6%, 36%, 0.5)
+  );
   color: var(--textColor-rw);
-  box-shadow: 1px 1px 1px hsl(var(--base-r), 6%, 55%) inset, -1px -1px 1px hsl(var(--base-r), 6%, 95%) inset;
+  box-shadow: 1px 1px 1px hsl(var(--base-r), 6%, 55%) inset,
+    -1px -1px 1px hsl(var(--base-r), 6%, 95%) inset;
   top: 1px;
 }
 #contact .buttan:active svg {
@@ -925,7 +955,8 @@ body {
 .policy-content a {
   text-decoration: underline;
 }
-.policy-content a:hover, .policy-content a:active {
+.policy-content a:hover,
+.policy-content a:active {
   color: var(--linkColor-r);
 }
 .policy-content address {
@@ -933,4 +964,4 @@ body {
   font-style: normal;
   line-height: 1.5;
   font-size: 0.9em;
-}/*# sourceMappingURL=shop.css.map */
+} /*# sourceMappingURL=shop.css.map */
