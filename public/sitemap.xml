@@ -65,13 +65,10 @@
     <loc>http://localhost:1313/blog/about/</loc>
     <lastmod>2024-11-28T15:49:33+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/tags/%E3%82%B5%E3%82%A4%E3%83%88%E6%83%85%E5%A0%B1/</loc>
+    <loc>http://localhost:1313/blog/tags/%E3%82%B5%E3%82%A4%E3%83%88%E9%96%A2%E9%80%A3/</loc>
     <lastmod>2024-11-28T15:49:33+09:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/blog/renewal/</loc>
-    <lastmod>2024-11-28T15:49:33+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/blog/tags/%E3%82%B5%E3%82%A4%E3%83%88%E9%96%A2%E9%80%A3/</loc>
     <lastmod>2024-11-28T15:49:33+09:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/contact/</loc>

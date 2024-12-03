@@ -232,6 +232,12 @@ body {
   }
 }
 #article-header {
+  .time {
+    color: var(--textColor-g);
+    font-size: 0.9em;
+    line-height: var(--lh);
+  }
+
   .post-meta {
     display: grid;
     grid-template-columns: auto auto;

@@ -2,7 +2,7 @@
 title: "このサイトやブログについて"
 date: 2024-11-02T10:00:00+09:00
 categories: ["お知らせ"]
-tags: ["サイト情報","店舗情報"]
+tags: ["サイト関連","店舗情報"]
 thumbnail": "thumbnail.jpg"
 pickup: false
 ---
