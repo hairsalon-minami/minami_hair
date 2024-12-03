@@ -353,7 +353,6 @@ body {
   td {
     line-height: var(--lh);
     padding-top: 0.5em;
-    border-bottom: 1px dotted currentColor;
   }
   th {
     min-width: 6em;
@@ -365,6 +364,13 @@ body {
     width: 18em;
   }
 
+  tbody tr {
+    border-bottom: 1.5px dotted currentColor;
+
+    &:last-of-type {
+      border: none;
+    }
+  }
   .public {
     border: 0;
     line-height: 1.5;
@@ -419,29 +425,52 @@ body {
     position: absolute;
     top: 0.25em;
     right: 0.25em;
+    opacity: 0.75;
+
+    &:active,
+    &:hover {
+      opacity: 1;
+      top: calc(0.25em + 1px);
+      transition: 0.1s;
+    }
+    &:active {
+      top: calc(0.25em + 3px);
+    }
   }
 
   a {
     text-align: center;
     font-size: 0.8em;
     padding: 0.5em 1em;
-    color: var(--backGround-rl);
+    color: var(--textColor-g);
     border-radius: 2em;
-    background: var(--backGround-d);
-    @media ($mq-lg) {
-      box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
-    }
+    border: 1px solid currentColor;
 
-    &:hover,
-    &:active {
+    &:hover {
       background: var(--textColor-rg);
       color: var(--textColor-rw);
       border-color: var(--textColor-rg);
     }
+
     &:active {
-      box-shadow: none;
-      top: 1px;
-      transition: 0.1s;
+      opacity: 0.5;
+    }
+
+    @media ($mq-lg) {
+      box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+      background: var(--backGround-d);
+      color: var(--backGround-rl);
+      border: none;
+      &:hover {
+        background: var(--backGround-d);
+        color: var(--backGround-rl);
+      }
+      &:active {
+        opacity: 1;
+        background: var(--textColor-rg);
+        color: var(--textColor-rw);
+        box-shadow: none;
+      }
     }
   }
 }

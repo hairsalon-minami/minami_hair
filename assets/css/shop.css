@@ -344,7 +344,6 @@ body {
 .shop-info td {
   line-height: var(--lh);
   padding-top: 0.5em;
-  border-bottom: 1px dotted currentColor;
 }
 .shop-info th {
   min-width: 6em;
@@ -354,6 +353,12 @@ body {
 }
 .shop-info td {
   width: 18em;
+}
+.shop-info tbody tr {
+  border-bottom: 1.5px dotted currentColor;
+}
+.shop-info tbody tr:last-of-type {
+  border: none;
 }
 .shop-info .public {
   border: 0;
@@ -413,30 +418,50 @@ body {
     position: absolute;
     top: 0.25em;
     right: 0.25em;
+    opacity: 0.75;
+  }
+  .map #appleLink:active, .map #appleLink:hover {
+    opacity: 1;
+    top: calc(0.25em + 1px);
+    transition: 0.1s;
+  }
+  .map #appleLink:active {
+    top: calc(0.25em + 3px);
   }
 }
 .map #appleLink a {
   text-align: center;
   font-size: 0.8em;
   padding: 0.5em 1em;
-  color: var(--backGround-rl);
+  color: var(--textColor-g);
   border-radius: 2em;
-  background: var(--backGround-d);
+  border: 1px solid currentColor;
 }
-@media ((min-width: 992px)) {
-  .map #appleLink a {
-    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
-  }
-}
-.map #appleLink a:hover, .map #appleLink a:active {
+.map #appleLink a:hover {
   background: var(--textColor-rg);
   color: var(--textColor-rw);
   border-color: var(--textColor-rg);
 }
 .map #appleLink a:active {
-  box-shadow: none;
-  top: 1px;
-  transition: 0.1s;
+  opacity: 0.5;
+}
+@media ((min-width: 992px)) {
+  .map #appleLink a {
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+    background: var(--backGround-d);
+    color: var(--backGround-rl);
+    border: none;
+  }
+  .map #appleLink a:hover {
+    background: var(--backGround-d);
+    color: var(--backGround-rl);
+  }
+  .map #appleLink a:active {
+    opacity: 1;
+    background: var(--textColor-rg);
+    color: var(--textColor-rw);
+    box-shadow: none;
+  }
 }
 
 .calendars {

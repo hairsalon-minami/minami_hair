@@ -280,3 +280,4 @@ const notes = () => {
 createCalendar(to_year, to_month, to_day);
 notes();
 createCalendar(nx_year, nx_month);
+notes();

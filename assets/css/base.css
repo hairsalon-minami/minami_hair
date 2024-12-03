@@ -534,7 +534,7 @@ body {
   top: 15px;
 }
 #navigation .line {
-  height: 1px;
+  height: 1.5px;
   border-radius: 3px;
   width: 17px;
 }
