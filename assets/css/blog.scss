@@ -667,7 +667,7 @@ body {
   a {
     display: flex;
     flex-direction: column;
-    align-items: end;
+    align-items: flex-end;
 
     &:hover {
       text-decoration: underline;
@@ -1093,7 +1093,7 @@ body {
   .page-item:first-child .page-link {
     width: 2.5em;
     border-radius: 1.25em 0 0 1.25em;
-    justify-content: end;
+    justify-content: flex-end;
     padding-right: 0.5em;
   }
   .page-item:last-child .page-link {

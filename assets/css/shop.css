@@ -258,7 +258,7 @@ body {
   height: 100%;
   display: grid;
   place-content: center;
-  flex-direction: column;
+  place-items: column;
   font-weight: bold;
   font-size: 1.5em;
   gap: 20px 0;
