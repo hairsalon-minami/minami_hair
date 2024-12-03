@@ -489,7 +489,7 @@ body {
 
 #businessCalendar {
   --maxWidth: 456px;
-  padding: var(--lh) 0;
+  padding-top: var(--lh);
   line-height: 1;
   @media ($mq-md) {
     display: grid;
@@ -564,8 +564,8 @@ body {
         circle at center,
         transparent 0em,
         transparent 0.875em,
-        olivedrab 0.875em,
-        olivedrab 1.125em,
+        green 0.875em,
+        green 1.125em,
         transparent 1.125em
       );
     }
@@ -624,8 +624,8 @@ body {
       background: radial-gradient(
         var(--backGround) 0em,
         var(--backGround) 0.4em,
-        olivedrab 0.4em,
-        olivedrab 0.6em,
+        green 0.4em,
+        green 0.6em,
         var(--backGround) 0.6em,
         var(--backGround) 0.7em
       );
