@@ -212,6 +212,7 @@ body {
   grid-template-columns: auto;
   grid-template-rows: 50% auto var(--lh);
   aspect-ratio: 3/4;
+  overflow: hidden;
 }
 .blog-posts .thumbnail {
   width: 100%;
