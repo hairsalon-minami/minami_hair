@@ -355,7 +355,7 @@ body {
   width: 18em;
 }
 .shop-info tbody tr {
-  border-bottom: 1px solid currentColor;
+  border-bottom: 0.5px solid currentColor;
 }
 .shop-info tbody tr:last-of-type {
   border: none;
