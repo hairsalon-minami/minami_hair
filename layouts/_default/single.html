@@ -18,7 +18,7 @@
     {{- $lastmod := .Lastmod.Format ( .Site.Params.dateformat | default "Jan 2, 2006") -}}
     <!-- 公開日と更新日が違う場合、両方を表示 -->
     {{- if and (ne $lastmod $date) -}}
-    <time itemprop="datePublished" datetime="{{ .Date }}">{{ $date }}</time>&nbsp;(<time itemprop="dateModified" datetime="{{ .Lastmod }}">{{ $lastmod }}&nbsp;更新</time>)
+    <time itemprop="datePublished" datetime="{{ .Date }}">{{ $date }}</time>&nbsp;(最終更新日&nbsp;<time itemprop="dateModified" datetime="{{ .Lastmod }}">{{ $lastmod }}</time>)
     <!-- 公開日と更新日が同じ場合、公開日のみ表示 -->
     {{- else -}}
     <time itemprop="datePublished" datetime="{{ .Date }}">{{ $date }}</time>
