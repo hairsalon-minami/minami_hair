@@ -1023,6 +1023,7 @@ body {
       grid-template-rows: 50% calc(50% - var(--lh)) var(--lh);
       aspect-ratio: 3/4;
       overflow: hidden;
+      height: 100%;
 
       &:hover {
         opacity: 0.8;
