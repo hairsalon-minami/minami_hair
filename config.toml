@@ -4,7 +4,7 @@ title = "ヘアーサロンみなみ"
 hasCJKLanguage = true
 pluralizeListTitles = false
 enableGitInfo = true
-copyright = "© 2023 ヘアーサロンみなみ<br>Powered by Hugo"
+copyright = "© 2024 ヘアーサロンみなみ<br>Powered by Hugo"
 googleAnalytics = false
 
 [pagination]

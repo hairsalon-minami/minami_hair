@@ -1,27 +1,10 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>理容 on ヘアーサロンみなみ</title>
-    <link>http://localhost:1313/blog/tags/%E7%90%86%E5%AE%B9/</link>
-    <description>Recent content in 理容 on ヘアーサロンみなみ</description>
-    <generator>Hugo</generator>
-    <language>ja-jp</language>
-    <copyright>© 2023 ヘアーサロンみなみ&lt;br&gt;Powered by Hugo</copyright>
-    <lastBuildDate>Thu, 28 Nov 2024 15:49:33 +0900</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/tags/%E7%90%86%E5%AE%B9/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>理美容店とサロン専売品（店販品）の話</title>
-      <link>http://localhost:1313/blog/tenpan/</link>
-      <pubDate>Fri, 08 Nov 2024 19:13:38 +0900</pubDate>
-      <guid>http://localhost:1313/blog/tenpan/</guid>
-      <description>&lt;p&gt;サロン専売品とは、理容室や美容室だけで買える商品のことです。お店では店販品などともいいます。&lt;/p&gt;&#xA;&lt;p&gt;ドラッグストアやスーパーなどでもヘアー関連商品はありますが、そのような一般的な店舗（市販品）では買えず、理容室や美容室などでしか買えないのが、サロン専売品の本来の特徴。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>理容の伝統的サービス、総合調髪とは？</title>
-      <link>http://localhost:1313/blog/sogochohatsu/</link>
-      <pubDate>Thu, 07 Nov 2024 15:54:07 +0900</pubDate>
-      <guid>http://localhost:1313/blog/sogochohatsu/</guid>
-      <description>&lt;figure&gt;&#xD;&#xA;  &lt;img decoding&#xD;&#xA;  src=&#34;thumbnail.jpg&#34;width=&#34;800&#34;height=&#34;450&#34;alt=&#34;&#34;&#xD;&#xA;  /&gt;&#xD;&#xA;  &#xD;&#xA;&lt;/figure&gt;&#xD;&#xA;&#xA;&lt;p&gt;理容室のサービスは基本「整える」サービスです。髪を切って整えるだけでなく、ヒゲや眉を整えたり剃ったりするのも理容のサービスです。&lt;/p&gt;&#xA;&lt;p&gt;整えることに特化していた理容室では、総合調髪というサービスが基本的なメニューとして提供されています。当店でも総合調髪をおこなっています。&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>理容 on ヘアーサロンみなみ</title><link>https://minami-hair.com/blog/tags/%E7%90%86%E5%AE%B9/</link><description>Recent content in 理容 on ヘアーサロンみなみ</description><generator>Hugo</generator><language>ja-jp</language><copyright>© 2024 ヘアーサロンみなみ&lt;br>Powered by Hugo</copyright><lastBuildDate>Thu, 28 Nov 2024 15:49:33 +0900</lastBuildDate><atom:link href="https://minami-hair.com/blog/tags/%E7%90%86%E5%AE%B9/index.xml" rel="self" type="application/rss+xml"/><item><title>理美容店とサロン専売品（店販品）の話</title><link>https://minami-hair.com/blog/tenpan/</link><pubDate>Fri, 08 Nov 2024 19:13:38 +0900</pubDate><guid>https://minami-hair.com/blog/tenpan/</guid><description>&lt;p>サロン専売品とは、理容室や美容室だけで買える商品のことです。お店では店販品などともいいます。&lt;/p>
+&lt;p>ドラッグストアやスーパーなどでもヘアー関連商品はありますが、そのような一般的な店舗（市販品）では買えず、理容室や美容室などでしか買えないのが、サロン専売品の本来の特徴。&lt;/p></description></item><item><title>理容の伝統的サービス、総合調髪とは？</title><link>https://minami-hair.com/blog/sogochohatsu/</link><pubDate>Thu, 07 Nov 2024 15:54:07 +0900</pubDate><guid>https://minami-hair.com/blog/sogochohatsu/</guid><description>&lt;figure>
+ &lt;img decoding
+ src="thumbnail.jpg"width="800"height="450"alt=""
+ />
+ 
+&lt;/figure>
+
+&lt;p>理容室のサービスは基本「整える」サービスです。髪を切って整えるだけでなく、ヒゲや眉を整えたり剃ったりするのも理容のサービスです。&lt;/p>
+&lt;p>整えることに特化していた理容室では、総合調髪というサービスが基本的なメニューとして提供されています。当店でも総合調髪をおこなっています。&lt;/p></description></item></channel></rss>
