@@ -1,4 +1,5 @@
-{{- define "title" }}{{ .Title }}{{ with .Site.Params.blogTitle }} - {{ . }}{{ end }}{{ end }}
+{{- define "title" }}{{ .Title }}{{ end }}
+{{/*  {{- define "title" }}{{ .Title }}{{ with .Site.Params.blogTitle }} - {{ . }}{{ end }}{{ end }}  */}}
 
 {{ define "meta" }}
   {{ partial "single_meta.html" . }}
