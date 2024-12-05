@@ -1220,6 +1220,13 @@ body {
     }
   }
 }
+
+////////////////////////////////////////////////////////////////////
+//
+//  etc.
+//
+///////////////////////////////////////////////////////////////////
+
 //シェアボタン（share）
 .share {
   padding: 1em 0 calc(var(--lh) - 1em);
@@ -1267,4 +1274,10 @@ body {
 
 footer > .share {
   padding: calc(var(--lh) * 2 - 1em) 0 1em;
+}
+
+// googleカスタム検索
+#search > div > div {
+  font-family: sans-serif;
+  border-radius: 4px;
 }
