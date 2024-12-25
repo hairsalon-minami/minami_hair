@@ -17,6 +17,7 @@
   {{ end -}}
 </div>
 <div class="shop-description">{{ .Content }}</div>
+
 {{- $blogs := where site.RegularPages "Section" "blog" -}}
 {{- if $blogs -}}
 <div class="blog-info">
@@ -47,6 +48,19 @@
   </div>
 </div>
 {{- end -}}  */}}
+
+{{/*  <div>
+  <dl class="shop-menu">
+    <dt>カットのみ</dt>
+    <dd>￥2800</dd>
+    <dt>総合調髪</dt>
+    <dd>￥3800</dd>
+  </dl>
+  <div class="menu-link">
+    <a href="{{ "/menu/" | absLangURL }}"><span>メニュー・料金を見る</span></a>
+  </div>
+</div>  */}}
+
 <div id="about">
 <div class="access">
   <h3>店舗情報</h3>
