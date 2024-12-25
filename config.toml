@@ -59,10 +59,10 @@ tags = "/blog/tags/:title"
 
 [menu]
 [[menu.main]]
-    name = "店舗情報"
+    name = "ホーム"
     pre = ""
     weight = -150
-    url = "/#about"
+    url = "/"
 [[menu.main]]
     name = "メニュー＆料金"
     pre = ""
