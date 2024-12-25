@@ -9,15 +9,46 @@
 body {
   background: var(--backGround-rl);
   color: var(--textColor-r);
+  padding-top: 3rem;
+  @media ($mq-md) {
+    padding-top: 0;
+  }
 }
 
 #header {
   background: var(--backGround-rl);
   color: var(--textColor-r);
+
+  position: fixed;
+  top: 0px;
+  z-index: 101;
+  left: 0;
+  right: 0;
+  @media ($mq-md) {
+    position: relative;
+  }
 }
 #navigation {
   background: var(--backGround-rl);
   color: var(--textColor-r);
+
+  position: fixed;
+  z-index: 102;
+  right: 0;
+  top: 0;
+  @media ($mq-md) {
+    position: relative;
+    top: -3rem;
+  }
+}
+
+#navigation:has(input:checked) {
+  width: 100%;
+  height: 100%;
+  @media ($mq-md) {
+    width: auto;
+    height: auto;
+  }
 }
 
 ///////////////////////////////////////////////////////////////////

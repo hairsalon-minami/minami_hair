@@ -2,14 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/blog/categories/%E3%83%88%E3%83%94%E3%83%83%E3%82%AF/</loc>
+    <lastmod>2024-12-25T14:05:28+09:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/blog/tags/%E7%90%86%E5%AE%B9/</loc>
-    <lastmod>2024-12-24T17:10:57+09:00</lastmod>
+    <lastmod>2024-12-25T14:05:28+09:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/blog/strongpoint/</loc>
-    <lastmod>2024-12-24T17:10:57+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/blog/categories/%E7%90%86%E5%AE%B9%E7%BE%8E%E5%AE%B9/</loc>
-    <lastmod>2024-12-24T17:10:57+09:00</lastmod>
+    <lastmod>2024-12-25T14:05:28+09:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/blog/newyear2025/</loc>
     <lastmod>2024-12-05T15:45:57+09:00</lastmod>
@@ -29,9 +29,6 @@
     <loc>http://localhost:1313/blog/tags/%E3%82%B7%E3%83%A3%E3%83%B3%E3%83%97%E3%83%BC/</loc>
     <lastmod>2024-11-28T15:49:33+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/categories/%E3%83%88%E3%83%94%E3%83%83%E3%82%AF/</loc>
-    <lastmod>2024-11-28T15:49:33+09:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/blog/tags/%E5%95%86%E5%93%81/</loc>
     <lastmod>2024-11-28T15:49:33+09:00</lastmod>
   </url><url>
@@ -48,6 +45,9 @@
     <lastmod>2024-11-28T15:49:33+09:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/blog/sogochohatsu/</loc>
+    <lastmod>2024-11-28T15:49:33+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blog/categories/%E7%90%86%E5%AE%B9%E7%BE%8E%E5%AE%B9/</loc>
     <lastmod>2024-11-28T15:49:33+09:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/blog/tags/%E9%A1%94%E3%81%9D%E3%82%8A/</loc>

@@ -450,7 +450,6 @@ body {
   display: flex;
   align-items: center;
   height: 3rem;
-  background: var(--backGround-rl);
 }
 #header .logo {
   width: 100px;
