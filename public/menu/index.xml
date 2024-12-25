@@ -1,1 +1,13 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>メニュー＆料金 on ヘアーサロンみなみ</title><link>https://minami-hair.com/menu/</link><description>Recent content in メニュー＆料金 on ヘアーサロンみなみ</description><generator>Hugo</generator><language>ja-jp</language><copyright>© 2024 ヘアーサロンみなみ&lt;br>Powered by Hugo</copyright><lastBuildDate/><atom:link href="https://minami-hair.com/menu/index.xml" rel="self" type="application/rss+xml"/></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>メニュー＆料金 on ヘアーサロンみなみ</title>
+    <link>http://localhost:1313/menu/</link>
+    <description>Recent content in メニュー＆料金 on ヘアーサロンみなみ</description>
+    <generator>Hugo</generator>
+    <language>ja-jp</language>
+    <copyright>© 2024 ヘアーサロンみなみ&lt;br&gt;Powered by Hugo</copyright>
+    <lastBuildDate></lastBuildDate>
+    <atom:link href="http://localhost:1313/menu/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

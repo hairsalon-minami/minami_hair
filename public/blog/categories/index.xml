@@ -1,1 +1,34 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>カテゴリー一覧 on ヘアーサロンみなみ</title><link>https://minami-hair.com/blog/categories/</link><description>Recent content in カテゴリー一覧 on ヘアーサロンみなみ</description><generator>Hugo</generator><language>ja-jp</language><copyright>© 2024 ヘアーサロンみなみ&lt;br>Powered by Hugo</copyright><lastBuildDate>Thu, 05 Dec 2024 15:45:57 +0900</lastBuildDate><atom:link href="https://minami-hair.com/blog/categories/index.xml" rel="self" type="application/rss+xml"/><item><title>お知らせ</title><link>https://minami-hair.com/blog/categories/%E3%81%8A%E7%9F%A5%E3%82%89%E3%81%9B/</link><pubDate>Tue, 26 Nov 2024 10:01:52 +0900</pubDate><guid>https://minami-hair.com/blog/categories/%E3%81%8A%E7%9F%A5%E3%82%89%E3%81%9B/</guid><description/></item><item><title>トピック</title><link>https://minami-hair.com/blog/categories/%E3%83%88%E3%83%94%E3%83%83%E3%82%AF/</link><pubDate>Fri, 08 Nov 2024 19:13:38 +0900</pubDate><guid>https://minami-hair.com/blog/categories/%E3%83%88%E3%83%94%E3%83%83%E3%82%AF/</guid><description/></item><item><title>理容美容</title><link>https://minami-hair.com/blog/categories/%E7%90%86%E5%AE%B9%E7%BE%8E%E5%AE%B9/</link><pubDate>Thu, 07 Nov 2024 15:54:07 +0900</pubDate><guid>https://minami-hair.com/blog/categories/%E7%90%86%E5%AE%B9%E7%BE%8E%E5%AE%B9/</guid><description/></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>カテゴリー一覧 on ヘアーサロンみなみ</title>
+    <link>http://localhost:1313/blog/categories/</link>
+    <description>Recent content in カテゴリー一覧 on ヘアーサロンみなみ</description>
+    <generator>Hugo</generator>
+    <language>ja-jp</language>
+    <copyright>© 2024 ヘアーサロンみなみ&lt;br&gt;Powered by Hugo</copyright>
+    <lastBuildDate>Tue, 24 Dec 2024 17:10:57 +0900</lastBuildDate>
+    <atom:link href="http://localhost:1313/blog/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>理容美容</title>
+      <link>http://localhost:1313/blog/categories/%E7%90%86%E5%AE%B9%E7%BE%8E%E5%AE%B9/</link>
+      <pubDate>Tue, 24 Dec 2024 17:10:57 +0900</pubDate>
+      <guid>http://localhost:1313/blog/categories/%E7%90%86%E5%AE%B9%E7%BE%8E%E5%AE%B9/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>お知らせ</title>
+      <link>http://localhost:1313/blog/categories/%E3%81%8A%E7%9F%A5%E3%82%89%E3%81%9B/</link>
+      <pubDate>Tue, 26 Nov 2024 10:01:52 +0900</pubDate>
+      <guid>http://localhost:1313/blog/categories/%E3%81%8A%E7%9F%A5%E3%82%89%E3%81%9B/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>トピック</title>
+      <link>http://localhost:1313/blog/categories/%E3%83%88%E3%83%94%E3%83%83%E3%82%AF/</link>
+      <pubDate>Fri, 08 Nov 2024 19:13:38 +0900</pubDate>
+      <guid>http://localhost:1313/blog/categories/%E3%83%88%E3%83%94%E3%83%83%E3%82%AF/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

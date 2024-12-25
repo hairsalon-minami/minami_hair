@@ -1,2 +1,20 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>トピック on ヘアーサロンみなみ</title><link>https://minami-hair.com/blog/categories/%E3%83%88%E3%83%94%E3%83%83%E3%82%AF/</link><description>Recent content in トピック on ヘアーサロンみなみ</description><generator>Hugo</generator><language>ja-jp</language><copyright>© 2024 ヘアーサロンみなみ&lt;br>Powered by Hugo</copyright><lastBuildDate>Thu, 28 Nov 2024 15:49:33 +0900</lastBuildDate><atom:link href="https://minami-hair.com/blog/categories/%E3%83%88%E3%83%94%E3%83%83%E3%82%AF/index.xml" rel="self" type="application/rss+xml"/><item><title>理美容店とサロン専売品（店販品）の話</title><link>https://minami-hair.com/blog/tenpan/</link><pubDate>Fri, 08 Nov 2024 19:13:38 +0900</pubDate><guid>https://minami-hair.com/blog/tenpan/</guid><description>&lt;p>サロン専売品とは、理容室や美容室だけで買える商品のことです。お店では店販品などともいいます。&lt;/p>
-&lt;p>ドラッグストアやスーパーなどでもヘアー関連商品はありますが、そのような一般的な店舗（市販品）では買えず、理容室や美容室などでしか買えないのが、サロン専売品の本来の特徴。&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>トピック on ヘアーサロンみなみ</title>
+    <link>http://localhost:1313/blog/categories/%E3%83%88%E3%83%94%E3%83%83%E3%82%AF/</link>
+    <description>Recent content in トピック on ヘアーサロンみなみ</description>
+    <generator>Hugo</generator>
+    <language>ja-jp</language>
+    <copyright>© 2024 ヘアーサロンみなみ&lt;br&gt;Powered by Hugo</copyright>
+    <lastBuildDate>Thu, 28 Nov 2024 15:49:33 +0900</lastBuildDate>
+    <atom:link href="http://localhost:1313/blog/categories/%E3%83%88%E3%83%94%E3%83%83%E3%82%AF/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>理美容店とサロン専売品（店販品）の話</title>
+      <link>http://localhost:1313/blog/tenpan/</link>
+      <pubDate>Fri, 08 Nov 2024 19:13:38 +0900</pubDate>
+      <guid>http://localhost:1313/blog/tenpan/</guid>
+      <description>&lt;p&gt;サロン専売品とは、理容室や美容室だけで買える商品のことです。お店では店販品などともいいます。&lt;/p&gt;&#xA;&lt;p&gt;ドラッグストアやスーパーなどでもヘアー関連商品はありますが、そのような一般的な店舗（市販品）では買えず、理容室や美容室などでしか買えないのが、サロン専売品の本来の特徴。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

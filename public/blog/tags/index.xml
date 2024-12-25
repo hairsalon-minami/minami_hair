@@ -1,1 +1,76 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>タグ一覧 on ヘアーサロンみなみ</title><link>https://minami-hair.com/blog/tags/</link><description>Recent content in タグ一覧 on ヘアーサロンみなみ</description><generator>Hugo</generator><language>ja-jp</language><copyright>© 2024 ヘアーサロンみなみ&lt;br>Powered by Hugo</copyright><lastBuildDate>Thu, 05 Dec 2024 15:45:57 +0900</lastBuildDate><atom:link href="https://minami-hair.com/blog/tags/index.xml" rel="self" type="application/rss+xml"/><item><title>店舗情報</title><link>https://minami-hair.com/blog/tags/%E5%BA%97%E8%88%97%E6%83%85%E5%A0%B1/</link><pubDate>Tue, 26 Nov 2024 10:01:52 +0900</pubDate><guid>https://minami-hair.com/blog/tags/%E5%BA%97%E8%88%97%E6%83%85%E5%A0%B1/</guid><description/></item><item><title>シャンプー</title><link>https://minami-hair.com/blog/tags/%E3%82%B7%E3%83%A3%E3%83%B3%E3%83%97%E3%83%BC/</link><pubDate>Fri, 08 Nov 2024 19:13:38 +0900</pubDate><guid>https://minami-hair.com/blog/tags/%E3%82%B7%E3%83%A3%E3%83%B3%E3%83%97%E3%83%BC/</guid><description/></item><item><title>商品</title><link>https://minami-hair.com/blog/tags/%E5%95%86%E5%93%81/</link><pubDate>Fri, 08 Nov 2024 19:13:38 +0900</pubDate><guid>https://minami-hair.com/blog/tags/%E5%95%86%E5%93%81/</guid><description/></item><item><title>理容</title><link>https://minami-hair.com/blog/tags/%E7%90%86%E5%AE%B9/</link><pubDate>Fri, 08 Nov 2024 19:13:38 +0900</pubDate><guid>https://minami-hair.com/blog/tags/%E7%90%86%E5%AE%B9/</guid><description/></item><item><title>美容</title><link>https://minami-hair.com/blog/tags/%E7%BE%8E%E5%AE%B9/</link><pubDate>Fri, 08 Nov 2024 19:13:38 +0900</pubDate><guid>https://minami-hair.com/blog/tags/%E7%BE%8E%E5%AE%B9/</guid><description/></item><item><title>カット</title><link>https://minami-hair.com/blog/tags/%E3%82%AB%E3%83%83%E3%83%88/</link><pubDate>Thu, 07 Nov 2024 15:54:07 +0900</pubDate><guid>https://minami-hair.com/blog/tags/%E3%82%AB%E3%83%83%E3%83%88/</guid><description/></item><item><title>セット</title><link>https://minami-hair.com/blog/tags/%E3%82%BB%E3%83%83%E3%83%88/</link><pubDate>Thu, 07 Nov 2024 15:54:07 +0900</pubDate><guid>https://minami-hair.com/blog/tags/%E3%82%BB%E3%83%83%E3%83%88/</guid><description/></item><item><title>顔そり</title><link>https://minami-hair.com/blog/tags/%E9%A1%94%E3%81%9D%E3%82%8A/</link><pubDate>Thu, 07 Nov 2024 15:54:07 +0900</pubDate><guid>https://minami-hair.com/blog/tags/%E9%A1%94%E3%81%9D%E3%82%8A/</guid><description/></item><item><title>サイト関連</title><link>https://minami-hair.com/blog/tags/%E3%82%B5%E3%82%A4%E3%83%88%E9%96%A2%E9%80%A3/</link><pubDate>Sat, 02 Nov 2024 10:00:00 +0900</pubDate><guid>https://minami-hair.com/blog/tags/%E3%82%B5%E3%82%A4%E3%83%88%E9%96%A2%E9%80%A3/</guid><description/></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>タグ一覧 on ヘアーサロンみなみ</title>
+    <link>http://localhost:1313/blog/tags/</link>
+    <description>Recent content in タグ一覧 on ヘアーサロンみなみ</description>
+    <generator>Hugo</generator>
+    <language>ja-jp</language>
+    <copyright>© 2024 ヘアーサロンみなみ&lt;br&gt;Powered by Hugo</copyright>
+    <lastBuildDate>Tue, 24 Dec 2024 17:10:57 +0900</lastBuildDate>
+    <atom:link href="http://localhost:1313/blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>理容</title>
+      <link>http://localhost:1313/blog/tags/%E7%90%86%E5%AE%B9/</link>
+      <pubDate>Tue, 24 Dec 2024 17:10:57 +0900</pubDate>
+      <guid>http://localhost:1313/blog/tags/%E7%90%86%E5%AE%B9/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>店舗情報</title>
+      <link>http://localhost:1313/blog/tags/%E5%BA%97%E8%88%97%E6%83%85%E5%A0%B1/</link>
+      <pubDate>Tue, 26 Nov 2024 10:01:52 +0900</pubDate>
+      <guid>http://localhost:1313/blog/tags/%E5%BA%97%E8%88%97%E6%83%85%E5%A0%B1/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>シャンプー</title>
+      <link>http://localhost:1313/blog/tags/%E3%82%B7%E3%83%A3%E3%83%B3%E3%83%97%E3%83%BC/</link>
+      <pubDate>Fri, 08 Nov 2024 19:13:38 +0900</pubDate>
+      <guid>http://localhost:1313/blog/tags/%E3%82%B7%E3%83%A3%E3%83%B3%E3%83%97%E3%83%BC/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>商品</title>
+      <link>http://localhost:1313/blog/tags/%E5%95%86%E5%93%81/</link>
+      <pubDate>Fri, 08 Nov 2024 19:13:38 +0900</pubDate>
+      <guid>http://localhost:1313/blog/tags/%E5%95%86%E5%93%81/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>美容</title>
+      <link>http://localhost:1313/blog/tags/%E7%BE%8E%E5%AE%B9/</link>
+      <pubDate>Fri, 08 Nov 2024 19:13:38 +0900</pubDate>
+      <guid>http://localhost:1313/blog/tags/%E7%BE%8E%E5%AE%B9/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>カット</title>
+      <link>http://localhost:1313/blog/tags/%E3%82%AB%E3%83%83%E3%83%88/</link>
+      <pubDate>Thu, 07 Nov 2024 15:54:07 +0900</pubDate>
+      <guid>http://localhost:1313/blog/tags/%E3%82%AB%E3%83%83%E3%83%88/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>セット</title>
+      <link>http://localhost:1313/blog/tags/%E3%82%BB%E3%83%83%E3%83%88/</link>
+      <pubDate>Thu, 07 Nov 2024 15:54:07 +0900</pubDate>
+      <guid>http://localhost:1313/blog/tags/%E3%82%BB%E3%83%83%E3%83%88/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>顔そり</title>
+      <link>http://localhost:1313/blog/tags/%E9%A1%94%E3%81%9D%E3%82%8A/</link>
+      <pubDate>Thu, 07 Nov 2024 15:54:07 +0900</pubDate>
+      <guid>http://localhost:1313/blog/tags/%E9%A1%94%E3%81%9D%E3%82%8A/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>サイト関連</title>
+      <link>http://localhost:1313/blog/tags/%E3%82%B5%E3%82%A4%E3%83%88%E9%96%A2%E9%80%A3/</link>
+      <pubDate>Sat, 02 Nov 2024 10:00:00 +0900</pubDate>
+      <guid>http://localhost:1313/blog/tags/%E3%82%B5%E3%82%A4%E3%83%88%E9%96%A2%E9%80%A3/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
