@@ -1,5 +1,5 @@
-{{ $currentNode := . }}
-{{ if .Site.Menus.main }}
+{{/*  {{ $currentNode := . }}
+{{ if .Site.Menus.main }}  */}}
 <nav id="navigation" aria-label="メインナビゲーション">
   <input type="checkbox" id="checkbox" aria-hidden="true" />
   <label class="burger" for="checkbox" aria-hidden="true">
@@ -13,11 +13,23 @@
     </button>
   </label>
   <ul class="global-navigation">
-    {{ range .Site.Menus.main }}
+    {{/*  {{ range .Site.Menus.main }}
     <li>
       <a href="{{ .URL }}">{{ .Pre }}<span>{{ .Name }}</span></a>
     </li>
-    {{ end }}
+    {{ end }}  */}}
+    <li>
+      <a href="/#about" onclick="if(location.pathname=='/')document.getElementById('checkbox').checked=false;"><span>ホーム（店舗情報）</span></a>
+    </li>
+    <li>
+      <a href="/menu/"><span>メニュー＆料金</span></a>
+    </li>
+    <li>
+      <a href="/contact/"><span>ご予約・お問い合わせ</span></a>
+    </li>
+    <li>
+      <a href="/blog/"><span>BLOG</span></a>
+    </li>
   </ul>
 </nav>
-{{ end }}
+{{/*  {{ end }}  */}}

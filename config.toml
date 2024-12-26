@@ -58,26 +58,26 @@ tags = "/blog/tags/:title"
   weight = 10
 
 [menu]
-[[menu.main]]
-    name = "ホーム"
-    pre = ""
-    weight = -150
-    url = "/"
-[[menu.main]]
-    name = "メニュー＆料金"
-    pre = ""
-    weight = -130
-    url = "/menu/"
-[[menu.main]]
-    name = "ご予約・お問い合わせ"
-    pre = ""
-    weight = -120
-    url = "/contact/"
-[[menu.main]]
-    name = "BLOG"
-    pre = ""
-    weight = -110
-    url = "/blog/"
+# [[menu.main]]
+#     name = "ホーム"
+#     pre = ""
+#     weight = -150
+#     url = "/"
+# [[menu.main]]
+#     name = "メニュー＆料金"
+#     pre = ""
+#     weight = -130
+#     url = "/menu/"
+# [[menu.main]]
+#     name = "ご予約・お問い合わせ"
+#     pre = ""
+#     weight = -120
+#     url = "/contact/"
+# [[menu.main]]
+#     name = "BLOG"
+#     pre = ""
+#     weight = -110
+#     url = "/blog/"
 
 [[menu.footer]]
     name = "ホーム"
