@@ -7,27 +7,27 @@
     <generator>Hugo</generator>
     <language>ja-jp</language>
     <copyright>© 2024 ヘアーサロンみなみ&lt;br&gt;Powered by Hugo</copyright>
-    <lastBuildDate>Wed, 25 Dec 2024 14:05:28 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 05 Jan 2025 17:55:45 +0900</lastBuildDate>
     <atom:link href="http://localhost:1313/blog/categories/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>トピック</title>
-      <link>http://localhost:1313/blog/categories/%E3%83%88%E3%83%94%E3%83%83%E3%82%AF/</link>
-      <pubDate>Wed, 25 Dec 2024 14:01:57 +0900</pubDate>
-      <guid>http://localhost:1313/blog/categories/%E3%83%88%E3%83%94%E3%83%83%E3%82%AF/</guid>
-      <description></description>
-    </item>
     <item>
       <title>お知らせ</title>
       <link>http://localhost:1313/blog/categories/%E3%81%8A%E7%9F%A5%E3%82%89%E3%81%9B/</link>
-      <pubDate>Tue, 26 Nov 2024 10:01:52 +0900</pubDate>
+      <pubDate>Sun, 05 Jan 2025 17:55:45 +0900</pubDate>
       <guid>http://localhost:1313/blog/categories/%E3%81%8A%E7%9F%A5%E3%82%89%E3%81%9B/</guid>
       <description></description>
     </item>
     <item>
       <title>理容美容</title>
       <link>http://localhost:1313/blog/categories/%E7%90%86%E5%AE%B9%E7%BE%8E%E5%AE%B9/</link>
-      <pubDate>Thu, 07 Nov 2024 15:54:07 +0900</pubDate>
+      <pubDate>Wed, 25 Dec 2024 14:01:57 +0900</pubDate>
       <guid>http://localhost:1313/blog/categories/%E7%90%86%E5%AE%B9%E7%BE%8E%E5%AE%B9/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>トピック</title>
+      <link>http://localhost:1313/blog/categories/%E3%83%88%E3%83%94%E3%83%83%E3%82%AF/</link>
+      <pubDate>Fri, 08 Nov 2024 19:13:38 +0900</pubDate>
+      <guid>http://localhost:1313/blog/categories/%E3%83%88%E3%83%94%E3%83%83%E3%82%AF/</guid>
       <description></description>
     </item>
   </channel>

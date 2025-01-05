@@ -5,7 +5,6 @@ categories: ["お知らせ"]
 tags: ["店舗情報"]
 thumbnail": "thumbnail.jpg"
 toc: false
-pickup: true
 draft: false
 ---
 {{< figure-img src="thumbnail.jpg" width="800" height="450" >}}
